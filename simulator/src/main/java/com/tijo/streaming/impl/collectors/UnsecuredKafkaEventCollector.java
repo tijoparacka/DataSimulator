@@ -24,18 +24,12 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
             topicName = config.getConfig(
                     "sim.kafka.topicName");
             logger.info("Setting up bootstrap servers " +  bootstrapServer+ " and producing to topic "+topicName);
-
             props = new Properties();
-
             props.put("bootstrap.servers", bootstrapServer);
-
-
             props.put("key.serializer",
                     "org.apache.kafka.common.serialization.StringSerializer");
-
             props.put("value.serializer",
                     "org.apache.kafka.common.serialization.StringSerializer");
-
             producer = new KafkaProducer<String, String>(props);
 
         } catch (Exception e) {
@@ -58,12 +52,13 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
             try {
                 producer.send(new ProducerRecord<String, String>(topicName,
                                                                  ((Event) message).toText().replace("\n", "")));
-                // logger.debug(((Event)message ).toText().replace( "\n",""));
+                numberOfEventsProcessed++;
+                if(numberOfEventsProcessed %100 ==0)
+                    logger.info("Produced 100 event "  );
             }
             catch (Exception e) {
                 logger.error(e.getMessage(), e);
             }
-            numberOfEventsProcessed++;
         }
     }
 }

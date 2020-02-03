@@ -15,14 +15,18 @@ import com.tijo.streaming.impl.messages.StopSimulation;
 import com.tijo.streaming.listeners.SimulatorListener;
 import com.tijo.streaming.masters.SimulationMaster;
 
-public class App {
+public class DataSimulator
+{
 	private static ObjectWriter writer;
+	private static String configFilePath;
+
 	public static ObjectWriter getWriter(){
 		return writer;
 	}
+	public static String getConfigFilePath(){return configFilePath;}
 	public static void main(String[] args) throws Exception
 	{
-		if (args != null && args.length == 6) {
+		if (args != null && args.length == 7) {
 			try {
 				final int numberOfEventEmitters = Integer.parseInt(args[0]);
 				final int numberOfEvents = Integer.parseInt(args[1]);
@@ -39,7 +43,7 @@ public class App {
 				}else {
 					throw new Exception(" Unrecognized data format type. Currently only csv and json are supported");
 				}
-
+				configFilePath=args[6];
 				ActorSystem system = ActorSystem.create("EventSimulator");
 				final ActorRef listener = system.actorOf(
 						Props.create(SimulatorListener.class), "listener");

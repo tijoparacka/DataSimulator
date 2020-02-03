@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.logging.Logger;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.tijo.App;
+import com.tijo.DataSimulator;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 import akka.actor.UntypedActor;
@@ -23,6 +23,6 @@ public abstract class AbstractDomainObject extends UntypedActor implements Domai
 
 	public String toText() throws JsonProcessingException
 	{
-		return App.getWriter().writeValueAsString(this);
+		return DataSimulator.getWriter().writeValueAsString(this);
 	}
 }

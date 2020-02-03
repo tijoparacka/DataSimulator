@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="data-simulator" />
+        <module name="distribution" />
+        <module name="simulator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="data-simulator" target="1.8" />
+      <module name="data-simulator" target="1.5" />
+      <module name="distribution" target="1.8" />
+      <module name="simulator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
