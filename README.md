@@ -30,7 +30,7 @@ In this case, I'm making sure I have a reference to the eventCollector, and then
 
 ## Building the simulator
 
-This is built using maven, so just do `mvn clean package`.
+This is built using maven, so just do `mvn clean package`. The tar file is created under distribution/target dir. untar/unzip the disto and happy simulating.
 
 ## Running the simulator
 
