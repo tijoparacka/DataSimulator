@@ -1,10 +1,9 @@
 package com.tijo.streaming.impl.domain.funnelAnalysis;
 
 import akka.actor.ActorRef;
+import com.tijo.streaming.Util;
 import com.tijo.streaming.impl.domain.AbstractEventEmitter;
-import com.tijo.streaming.impl.domain.Event;
 import com.tijo.streaming.impl.messages.EmitEvent;
-import com.tijo.streaming.impl.messages.StopSimulation;
 
 import java.util.Random;
 
@@ -35,7 +34,7 @@ public class Page  extends AbstractEventEmitter  {
         if (message instanceof EmitEvent) {
             ActorRef actor = this.context().system()
                                  .actorFor("akka://EventSimulator/user/eventCollector");
-            cookie = randomAlphaNumeric(SESSION_ID_LENGTH);
+            cookie = Util.randomAlphaNumeric(SESSION_ID_LENGTH);
             index = 0;
             for (int pageId = 0; pageId < pageConversion.length; pageId++) {
                 PageDetails pageEvent = generateEvent();
@@ -56,13 +55,4 @@ public class Page  extends AbstractEventEmitter  {
         }
     }
 
-    private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    public static String randomAlphaNumeric(int count) {
-        StringBuilder builder = new StringBuilder();
-        while (count-- != 0) {
-            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
-            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
-        }
-        return builder.toString();
-    }
 }
