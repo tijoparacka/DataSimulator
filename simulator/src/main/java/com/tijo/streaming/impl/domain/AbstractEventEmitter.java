@@ -7,5 +7,5 @@ public abstract class AbstractEventEmitter extends AbstractDomainObject {
 
 	}
 
-	public abstract Event generateEvent();
+	public abstract Event generateEvent() throws Exception;
 }
