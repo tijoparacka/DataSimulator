@@ -53,6 +53,14 @@ public class ConfigUtil
       }
     }
   }
+  public ConfigUtil(String path) throws IOException
+  {
+    Properties prop = new Properties();
+    try (FileInputStream is = new FileInputStream(new File(path))) {
+      prop.load(is);
+      populateConfigMap(prop);
+    }
+  }
 
   private void populateConfigMap(Properties prop)
   {

@@ -28,6 +28,12 @@ public class GenericEventGenerator extends AbstractEventEmitter
   public static final String LONG = "LONG";
   public static final String INT = "INT";
   public static final String DOUBLE = "DOUBLE";
+  public static final String DATE = "DATE";
+  public static final String DATE_RANGE = "DATE_RANGE";
+  public static final String WITH_CARDINALITY = "WITH_CARDINALITY";
+  public static final String CONSTANT_STRING = "CONSTANT_STRING";
+
+  StringBuilder sb = new StringBuilder();
   ConfigUtil config;
   String[] filePaths;
   MetaData[] metaDatas;
@@ -36,6 +42,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
   Random randomUtil = new Random();
   ObjectMapper mapper = new ObjectMapper();
   Class eventClass ;
+  String dir ;
   public GenericEventGenerator() throws Exception
   {
     try {
@@ -43,6 +50,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
       config = ConfigUtil.getInstance();
       //String dimFiles = config.getConfig("sim.generic.dimension.files");
       String metaDataJson=config.getConfig("sim.generic.metadata");
+      this.dir=config.getConfig( "sim.cardinality.generator.folder");
       ObjectMapper objectMapper = new ObjectMapper();
       this.metaDatas =objectMapper.readValue(metaDataJson, MetaData[].class);
       this.eventClass= Class.forName(config.getConfig("sim.generic.eventClass"));
@@ -55,11 +63,11 @@ public class GenericEventGenerator extends AbstractEventEmitter
     for (MetaData metaData : metaDatas) {
       try {
         if (metaData.getType().equalsIgnoreCase(FIXED)) {
-          List<String> dimData = new ArrayList<>(Files.readAllLines(Paths.get(metaData.getFile()), StandardCharsets.UTF_8));
+          List<String> dimData = new ArrayList<>(Files.readAllLines(Paths.get(dir+"/"+metaData.getFile()), StandardCharsets.UTF_8));
           dim.put(metaData.getDimension(), dimData);
         }
         else{
-          System.out.println("not loading");
+          System.out.println("Cardinality not loading for "+ metaData.getDimension());
         }
       }
       catch (IOException e) {
@@ -71,17 +79,17 @@ public class GenericEventGenerator extends AbstractEventEmitter
   @Override
   public GenericEvent generateEvent() throws Exception
   {
-    StringBuilder sb = new StringBuilder();
+   sb.setLength(0);
     sb.append("{");
-    sb.append("\"Time\":" ).append(System.currentTimeMillis());
+
     for (int i = 0; i < metaDatas.length; i++) {
       MetaData m = metaDatas[i];
-      //if (i != metaDatas.length-1)
-      sb.append(",");
+      if (i != 0)
+        sb.append(",");
 
       sb.append("\"").append(m.getDimension() ).append("\":");
       switch (m.getType()) {
-        case FIXED:
+        case FIXED :
           int size = dim.get(m.getDimension()).size();
           int index = randomUtil.nextInt(size);
           sb.append("\"").append(dim.get(m.getDimension()).get(index)).append("\"");
@@ -89,6 +97,10 @@ public class GenericEventGenerator extends AbstractEventEmitter
 
         case STRING:
           sb.append("\"").append(Util.randomAlphaNumeric(m.getLimit())).append("\"");
+          break;
+        case CONSTANT_STRING:
+          int len = m.getConstants().length;
+          sb.append("\"").append(m.getConstants() [randomUtil.nextInt(len)]).append("\"");
           break;
         case INT:
           sb.append(rand.nextInt(0,m.getLimit().intValue()));
@@ -100,6 +112,14 @@ public class GenericEventGenerator extends AbstractEventEmitter
         case DOUBLE:
           sb.append(randomUtil.nextDouble() * m.getLimit());
           break;
+        case DATE_RANGE:
+          sb.append(rand.nextLong( m.getStart().longValue(),  m.getEnd().longValue()));
+          break;
+        case DATE:
+          sb.append(System.currentTimeMillis()- rand.nextLong(0,m.getLimit().longValue()));
+          break;
+        default:
+          throw new IllegalStateException("Unexpected value: " + m.getType());
       }
     }
     sb.append("}");
