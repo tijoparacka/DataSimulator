@@ -1,5 +1,6 @@
 package com.tijo.streaming.impl.collectors;
 
+import com.tijo.DataSimulator;
 import com.tijo.config.ConfigUtil;
 import com.tijo.streaming.impl.domain.AbstractEventCollector;
 import com.tijo.streaming.impl.domain.Event;
