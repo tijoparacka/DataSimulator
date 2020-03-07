@@ -37,7 +37,8 @@ public class CardinalityGenerator
               metaData.getFile(),
               metaData.getDimension(),
               metaData.getLimit(),
-              metaData.getCardinality()
+              metaData.getCardinality(),
+              conf
           );
 
         }
@@ -48,16 +49,22 @@ public class CardinalityGenerator
     }
   }
 
-  private static void generateRandomData(String file, String dimension, Double limit, int cardinality)
+  private static void generateRandomData(
+      String file,
+      String dimension,
+      Double limit,
+      int cardinality,
+      ConfigUtil conf
+  )
       throws IOException
   {
 
     StringBuilder sb = new StringBuilder();
-
+    String dir = conf.getConfig("sim.cardinality.generator.folder");
     for (int i = 0; i < cardinality; i++) {
       sb.append(Util.randomAlphaNumeric(limit.intValue()) ).append("\n");
     }
-    Path path = Paths.get(file);
+    Path path = Paths.get(dir+"/"+file);
     Files.write(path,sb.toString().getBytes(StandardCharsets.UTF_8));
     System.out.println("Written Random data to "+file);
   }

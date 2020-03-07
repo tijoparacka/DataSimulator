@@ -24,15 +24,29 @@ public class DataSimulator
 		return writer;
 	}
 	public static String getConfigFilePath(){return configFilePath;}
+	private static  Class eventClass ;
+
+	public static int getNumberOfEvents()
+	{
+		return numberOfEvents;
+	}
+
+	private static int numberOfEvents;
+	public static Class getEventClass()
+	{
+		return eventClass;
+	}
+
+
 	public static void main(String[] args) throws Exception
 	{
 		if (args != null && args.length == 7) {
 			try {
 				final int numberOfEventEmitters = Integer.parseInt(args[0]);
-				final int numberOfEvents = Integer.parseInt(args[1]);
+				numberOfEvents = Integer.parseInt(args[1]);
 				final Class eventEmitterClass = Class.forName(args[2]);
 				final Class eventCollectorClass = Class.forName(args[3]);
-				final Class eventClass = Class.forName(args[4]);
+				eventClass = Class.forName(args[4]);
 				if(args[5].equalsIgnoreCase("csv")){
 					CsvMapper csvMapper = new CsvMapper();
 					CsvSchema csvSchema = csvMapper.schemaFor(eventClass);
