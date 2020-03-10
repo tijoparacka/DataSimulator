@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+import com.tijo.config.ConfigUtil;
 import com.tijo.streaming.impl.messages.StartSimulation;
 import com.tijo.streaming.impl.messages.StopSimulation;
 import com.tijo.streaming.listeners.SimulatorListener;
@@ -40,24 +41,28 @@ public class DataSimulator
 
 	public static void main(String[] args) throws Exception
 	{
-		if (args != null && args.length == 7) {
+		if (args != null && args.length == 6) {
 			try {
 				final int numberOfEventEmitters = Integer.parseInt(args[0]);
 				numberOfEvents = Integer.parseInt(args[1]);
 				final Class eventEmitterClass = Class.forName(args[2]);
 				final Class eventCollectorClass = Class.forName(args[3]);
-				eventClass = Class.forName(args[4]);
-				if(args[5].equalsIgnoreCase("csv")){
+				//eventClass =
+				configFilePath=args[5];
+				ConfigUtil conf = new ConfigUtil(configFilePath);
+				String eventClassName = conf.getConfig("sim.generic.eventClass");
+				eventClass =  Class.forName(eventClassName);
+				if(args[4].equalsIgnoreCase("csv")){
 					CsvMapper csvMapper = new CsvMapper();
 					CsvSchema csvSchema = csvMapper.schemaFor(eventClass);
 					writer = csvMapper.writer(csvSchema );
-				}else if (args[5].equalsIgnoreCase("json") ){
+				}else if (args[4].equalsIgnoreCase("json") ){
 					ObjectMapper mapper = new ObjectMapper();
 					writer = mapper.writer();
 				}else {
 					throw new Exception(" Unrecognized data format type. Currently only csv and json are supported");
 				}
-				configFilePath=args[6];
+
 				ActorSystem system = ActorSystem.create("EventSimulator");
 				final ActorRef listener = system.actorOf(
 						Props.create(SimulatorListener.class), "listener");
