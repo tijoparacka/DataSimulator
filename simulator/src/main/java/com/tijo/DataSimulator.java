@@ -41,22 +41,23 @@ public class DataSimulator
 
 	public static void main(String[] args) throws Exception
 	{
-		if (args != null && args.length == 6) {
+		if (args != null && args.length == 7) {
+			String baseDir = args[0];
 			try {
-				final int numberOfEventEmitters = Integer.parseInt(args[0]);
-				numberOfEvents = Integer.parseInt(args[1]);
-				final Class eventEmitterClass = Class.forName(args[2]);
-				final Class eventCollectorClass = Class.forName(args[3]);
+				final int numberOfEventEmitters = Integer.parseInt(args[1]);
+				numberOfEvents = Integer.parseInt(args[2]);
+				final Class eventEmitterClass = Class.forName(args[3]);
+				final Class eventCollectorClass = Class.forName(args[4]);
 				//eventClass =
-				configFilePath=args[5];
+				configFilePath=args[6];
 				ConfigUtil conf = new ConfigUtil(configFilePath);
 				String eventClassName = conf.getConfig("sim.generic.eventClass");
 				eventClass =  Class.forName(eventClassName);
-				if(args[4].equalsIgnoreCase("csv")){
+				if(args[5].equalsIgnoreCase("csv")){
 					CsvMapper csvMapper = new CsvMapper();
 					CsvSchema csvSchema = csvMapper.schemaFor(eventClass);
 					writer = csvMapper.writer(csvSchema );
-				}else if (args[4].equalsIgnoreCase("json") ){
+				}else if (args[5].equalsIgnoreCase("json") ){
 					ObjectMapper mapper = new ObjectMapper();
 					writer = mapper.writer();
 				}else {

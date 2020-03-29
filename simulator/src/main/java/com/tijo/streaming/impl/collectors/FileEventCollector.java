@@ -2,19 +2,16 @@ package com.tijo.streaming.impl.collectors;
 
 import com.tijo.DataSimulator;
 import com.tijo.config.ConfigUtil;
-import com.tijo.streaming.Util;
+import com.tijo.streaming.util.Util;
 import com.tijo.streaming.impl.domain.AbstractEventCollector;
 import com.tijo.streaming.impl.domain.Event;
 import com.tijo.streaming.impl.messages.DumpStats;
-import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
@@ -24,6 +21,7 @@ public class FileEventCollector extends AbstractEventCollector{
   private  String outputPath;
   private  int maxRows;
   private Path path ;
+  private int fileNameLength;
   BufferedWriter writer ;
   private long startTime =System.currentTimeMillis();
   public FileEventCollector()
@@ -33,6 +31,7 @@ public class FileEventCollector extends AbstractEventCollector{
       ConfigUtil config = ConfigUtil.getInstance();
       outputPath = config.getConfig("sim.file.outputdir");
       String rows =config.getConfig("sim.file.maxrows");
+      fileNameLength = Integer.parseInt( config.getConfig("sim.file.fileNameLength"));
 
       if(rows != null &&  rows.trim().length() == 0 ){
         maxRows = 5000000;
@@ -42,7 +41,7 @@ public class FileEventCollector extends AbstractEventCollector{
       }
 
       logger.info("Setting up output Folder " +  outputPath+ " with max rows in each file is "+maxRows);
-       this.path = getNewPath();
+       this.path = getNewPath(fileNameLength);
 
        writer = new BufferedWriter(new FileWriter(String.valueOf(path)));
 
@@ -53,13 +52,19 @@ public class FileEventCollector extends AbstractEventCollector{
     }
   }
 
-  private Path getNewPath() throws Exception
+  private Path getNewPath(int fileNameLength) throws Exception
   {
     String fileName = Util.randomAlphaNumeric(10);
     String path =outputPath + "/" + fileName ;
+    File folder = new File(outputPath);
+    folder.mkdirs();
+    if (!folder.exists()){
+      logger.error( "*** The folder "+outputPath + " does not exist. Please check the property sim.file.outputdir in config.properties file");
+      System.exit(1);
+    }
     File file = new File(path);
-    file.createNewFile();
-
+    if(!file.exists())
+      file.createNewFile();
     return Paths.get(path);
   }
   @Override
@@ -77,7 +82,7 @@ public class FileEventCollector extends AbstractEventCollector{
       logger.info("Processed " + numberOfEventsProcessed + " events");
       logger.info("Number of events processed per sec  = " + (maxRows /(  (System.currentTimeMillis() - startTime ) /1000))) ;
       startTime = System.currentTimeMillis();
-      this.path = getNewPath();
+      this.path = getNewPath(fileNameLength);
       writer.flush();
       writer.close();
       writer = new BufferedWriter(new FileWriter(path.toString()));

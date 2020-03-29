@@ -2,19 +2,17 @@ package com.tijo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tijo.config.ConfigUtil;
-import com.tijo.streaming.Util;
+import com.tijo.streaming.util.Util;
 import com.tijo.streaming.impl.domain.generic.GenericEventGenerator;
 import com.tijo.streaming.impl.domain.generic.MetaData;
+import org.apache.commons.io.FileUtils;
 
-import java.io.BufferedWriter;
+import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CardinalityGenerator
 {
@@ -22,11 +20,12 @@ public class CardinalityGenerator
 
   public static void main(String[] args) throws Exception
   {
-    if (args != null && args.length != 1) {
+    if (args != null && args.length != 2) {
       System.out.println(" Please provide a config file .");
       System.exit(0);
     }
-    ConfigUtil conf = new ConfigUtil(args[0]);
+    String baseDir = args[0];
+    ConfigUtil conf = new ConfigUtil(args[1]);
     String metaDataJson = conf.getConfig("sim.generic.metadata");
     ObjectMapper objectMapper = new ObjectMapper();
     metaDatas = objectMapper.readValue(metaDataJson, MetaData[].class);
@@ -61,10 +60,12 @@ public class CardinalityGenerator
 
     StringBuilder sb = new StringBuilder();
     String dir = conf.getConfig("sim.cardinality.generator.folder");
+    File dirFile = new File(dir);
+    dirFile.mkdirs();
     for (int i = 0; i < cardinality; i++) {
       sb.append(Util.randomAlphaNumeric(limit.intValue()) ).append("\n");
     }
-    Path path = Paths.get(dir+"/"+file);
+    Path path = Paths.get(dir+File.separator+file);
     Files.write(path,sb.toString().getBytes(StandardCharsets.UTF_8));
     System.out.println("Written Random data to "+file);
   }

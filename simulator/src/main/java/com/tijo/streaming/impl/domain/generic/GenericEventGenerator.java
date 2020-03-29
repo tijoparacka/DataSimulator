@@ -4,7 +4,7 @@ import akka.actor.ActorRef;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tijo.config.ConfigUtil;
-import com.tijo.streaming.Util;
+import com.tijo.streaming.util.Util;
 import com.tijo.streaming.impl.domain.AbstractEventEmitter;
 import com.tijo.streaming.impl.messages.EmitEvent;
 import org.apache.commons.math3.random.RandomDataGenerator;
@@ -15,7 +15,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
@@ -123,7 +122,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
       }
     }
     sb.append("}");
-   // System.out.println(sb.toString());
+    System.out.println(sb.toString());
     try {
       return (GenericEvent) mapper.readValue(sb.toString(), eventClass );
     }
