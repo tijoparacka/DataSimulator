@@ -7,4 +7,4 @@ do
   jarpath=$jarpath:$file
 done
 echo "Files in classpath $jarpath"
-java -Xmx1024m -cp "$jarpath" com.tijo.DataSimulator "$@"
+java -Xmx1024m -cp "$jarpath" com.tijo.DataSimulator $bin_dir/../ "$@"

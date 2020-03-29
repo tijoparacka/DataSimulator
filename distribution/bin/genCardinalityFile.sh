@@ -7,5 +7,5 @@ do
   jarpath=$jarpath:$file
 done
 echo "Files in classpath $jarpath"
-java  -cp "$jarpath" com.tijo.CardinalityGenerator "$@"
+java  -cp "$jarpath" com.tijo.CardinalityGenerator $bin_dir/../ "$@"
 
