@@ -5,7 +5,8 @@ The goal of this project is to create a very lightweight framework to quickly ge
 This project provides a generic simulation framework which is capable for simulating data based on configurations.  This simulator have capbilities to display the simulated data in console for verifying if the simulated data is correct or not . 
 At present this have implementation for pushing the simulated data to kafka or  to a file. You are welcome to contribute to create collectors which can push the data to other sources like kafka or blob storages. 
 
-###Prerequisites
+Prerequisites
+-------------
 
 
 You need to have jdk 1.8 installed in the machine where you would like to run the simulator. Please note jre is not enough for executing all the features provided by this simulator. Refer the [link](https://openjdk.java.net/install/) on how  to install jdk in your machine   
@@ -14,7 +15,8 @@ You need to have jdk 1.8 installed in the machine where you would like to run th
 For pushing the data to kafka you need to have a  kafka cluster and broker nodes and zookeeper should be accessible from 
 the node where you are running the simulator. 
 
-###Building From Source 
+Building From Source
+------------------ 
 
 1. Setup maven to build binaries from the source. [maven download](https://maven.apache.org/download.cgi)
 2. Download the source code from github. [DataSimulator](https://github.com/tijoparacka/DataSimulator)
@@ -23,17 +25,20 @@ the node where you are running the simulator.
 4. The binaries are created with in the distribution/target/data-simulator-1.1.1-bin.zip
 5. Unzip this binary to get started . 
 
-### Downloading from s3 location. 
+Downloading from s3 location
+---------------------------- 
 Imply employees can download the binaries from s3 location: s3://implytt/tools/datasimulator/ 
 
-###Running the simulator 
+Running the simulator
+-------------------- 
 Generic simulator have the capbility to 
 1. infer the schema from a json file and generate the data based on that. 
 2. This has the capability to generate a required cardinality based on the metadata mentioned in the config.properties file .
 See the below section to to get more details on how to configure the metadata to generate the required cardinality 
 3. Generate the data based on the data type and condition required. 
 
-##Config Properties
+Config Properties
+-----------------
  
  |Property | Details |Default |
  |---------|---------|--------|
