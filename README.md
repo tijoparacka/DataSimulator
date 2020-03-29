@@ -1,48 +1,78 @@
-Data Simulator
-================
+Data Simulator 
+==============
+The goal of this project is to create a very lightweight framework to quickly generate data for demo purposes.  The framework uses Akka to simplify concurrency and messaging, and is simple to extend.
 
-The goal of this project is to create a very lightweight framework to quickly generate data for demo purposes.  The framework uses Akka to simplify concurrency and messaging, and is simple to extend.  
+This project provides a generic simulation framework which is capable for simulating data based on configurations.  This simulator have capbilities to display the simulated data in console for verifying if the simulated data is correct or not . 
+At present this have implementation for pushing the simulated data to kafka or  to a file. You are welcome to contribute to create collectors which can push the data to other sources like kafka or blob storages. 
 
-The concept is that we have domain objects, for example Trucks.  These Trucks generate events, events in this case being influenced by their driver's risk factor.  There are two PoJo's to model this.  
-One for [Truck] (/streaming/impl/domain/transport/Truck.java), 
-and the other for [Driver] (/streaming/impl/domain/transport/Driver.java).  
-These two domain objects are used to generate events, in this case the Truck class generates events, and as such extends the AbstractEventEmitter class.  By implementing this class, the onReceive method needs to be implemented.  This method is called for each Truck in the simulation.  The onReceive method should generate events, create new Actors, send messages to Actors, etc, and send those events to an EventCollector.  The EventCollector is a class you can implement to collect the events generated from the, in this case Trucks, and put them somewhere.  In this case, we're using the UnsecuredKafkaEventCollector to push events to a Kafka queue.  How do we bootstrap this process to help override the configuration or behavior of Trucks and their Drivers for example?  We use a static class like the [TruckConfiguration] (/streaming/impl/domain/transport/TruckConfiguration.java).  This class helps with initializing the pool of domain objects that are used in the simulation.  For this example, we have an unbounded number of Trucks and Drivers, but in order to have some variance and enable modeling the risk of specific drivers we need a few risky drivers that emit a random risky event every _n_ number of cycles.
+###Prerequisites
 
-## Extending the framework
 
-To implement a new simulation, create a PoJo that implements the AbstractEventEmitter class.  Implement the onReceive method as follows:
+You need to have jdk 1.8 installed in the machine where you would like to run the simulator. Please note jre is not enough for executing all the features provided by this simulator. Refer the [link](https://openjdk.java.net/install/) on how  to install jdk in your machine   
 
-	@Override
-	public void onReceive(Object message) throws Exception {
-	    if (message instanceof EmitEvent) {
-	        ActorRef actor = this.context().system()
-	                .actorFor("akka://EventSimulator/user/eventCollector");
-	        Random rand = new Random();
-	        int sleepOffset = rand.nextInt(100);
-	        while (true) {
-	            Thread.sleep(500 + sleepOffset);
-	            actor.tell(generateEvent(), this.getSender());
-	        }
-	    }
-	}
-	
-In this case, I'm making sure I have a reference to the eventCollector, and then I'm waiting a natural amount of time before I generate an event.  The generateEvent class, in this case, just returns a class that extends the Event class.  The Event is arbitrary, it could be a financial transaction, or anything.  That Event is sent to the EventCollector to be persisted to disk in the form of a log, or put on a queue, etc.
 
-## Building the simulator
+For pushing the data to kafka you need to have a  kafka cluster and broker nodes and zookeeper should be accessible from 
+the node where you are running the simulator. 
 
-This is built using maven, so just do `mvn clean package`. The tar file is created under distribution/target dir. untar/unzip the disto and happy simulating.
+###Building From Source 
 
-## Running the simulator
+1. Setup maven to build binaries from the source. [maven download](https://maven.apache.org/download.cgi)
+2. Download the source code from github. [DataSimulator](https://github.com/tijoparacka/DataSimulator)
+3. Execute the following maven command to build the binaries. 
+     `` mvn package -DskipTests``
+4. The binaries are created with in the distribution/target/data-simulator-1.1.1-bin.zip
+5. Unzip this binary to get started . 
 
-	./bin/start.sh 3000 -1  com.tijo.streaming.impl.domain.funnalAnalysis.Page com.tijo.streaming.impl.collectors.UnsecuredKafkaEventCollector com.tijo.streaming.impl.domain.funnalAnalysis.PageDetails csv ./conf/config.properties
+### Downloading from s3 location. 
+Imply employees can download the binaries from s3 location: s3://implytt/tools/datasimulator/ 
 
-The run.sh script takes in the number of domain objects to spin up, the number of events to process before exiting (-1 is unlimited), and the fully qualified class name of the domain object that extends AbstractEventEmitter, and the EventCollector class.
+###Running the simulator 
+Generic simulator have the capbility to 
+1. infer the schema from a json file and generate the data based on that. 
+2. This has the capability to generate a required cardinality based on the metadata mentioned in the config.properties file .
+See the below section to to get more details on how to configure the metadata to generate the required cardinality 
+3. Generate the data based on the data type and condition required. 
 
-Domains that are currently modeled out of the box:
+##Config Properties
+ 
+ |Property | Details |Default |
+ |---------|---------|--------|
+ |sim.kafka.bootstrap.servers|Kafka bootstrap server ip/hostname with port no eg:``localhost:9092``|This parameter is considered only if the Collector is ``com.tijo.streaming.impl.collectors.UnsecuredKafkaEventCollector`` mentioned in the start script|
+ |sim.kafka.topicName| The data will be pushed to the topic mentioned |This parameter is considered only if the Collector is ``com.tijo.streaming.impl.collectors.UnsecuredKafkaEventCollector`` mentioned in the start script|
+ |sim.generic.infer.packageName| Used by inferjson and refering to java package naming.| none|
+ |sim.generic.infer.jsonPath| Name of the sample json file used for infering the schema | The infered java code will be created with the same name as json file name , excluding the extension|
+ |sim.generic.infer.generateCode|True if json to java  code generation is required.  This can be set to false if any modification is done in the java code generated in earlier tries.|true|
+ |sim.generic.infer.pojoOutputDir|Folder path for generating the java code corresponding to the sample json|  ``pojoOutput``|
+ |sim.cardinality.generator.folder| If the metadata configuration is to use fixed no of cardinatiles , this will be generated and saved as file in this folder. |none|
+ |sim.file.maxrows|If the collector is to save the data to file , then this property is limit the no of records in the file |none|
+ |sim.file.outputdir|The folder in which the generated files are saved|none|
+ |sim.file.fileNameLength| random file names are generated for storing the files in disk. The length of the file name is controlled with this |none|
+ |sim.generic.eventClass| Name of the class for the json file . If infer json is used to generate the java class, same  class name need to be mentioned here.|none| 
+ |sim.generic.metadata| Refer the below metata data section |none|
+ 
+ ## Generic Metadata Config
+ 
+ | Type| Details | Options |
+ |-----|---------|---------|
+ |FIXED| Used to create random data from a fixed  list of values.| 1. "file":name of the file where the list of data is saved. 2. "limit" :the size of the data ( this is used when gencardinality.sh is used to create the list of random data) 3. "cardinality": cardinality of the data|
+ |STRING| Used to geneate random  String | 1. "limit" : the length of the string to be generated|
+ |INT| Used for creating random integer value | 1. "limit" : Max value of the Integer to be generated. This should not be more than Integer.MAX_VALUE.|
+ |LONG| Used for creating random Long value | 1. "limit" : Max value of the Long to be generated. This should not be more than Long.MAX_VALUE.|
+ |DOUBLE|  Used for creating random Double value | 1. "limit" : Max value of the Double  to be generated. This should not be more than Double.MAX_VALUE.|
+ |DATE_RANGE| Used to generate date from a start time in milli sec to end time in millisecond .|1. "start" : start time in millisecond  2. "end": end time in millisecond |
+ |DATE| Generate the current time at which the simulation happens.| With the option limit you can give a variance to simulate the late arrival of data|
+ 
+  
+ Please refer the example configs to write a your own metadata.
+ 
+ This simulator can approximately generate 50,000 data points in a 8 core machine with high speed Hard disk.  There is no limit to generate data to push the data to kafka by running the simulator to multiple machine. 
+ 
+ 
+ If you want to simulate specific scenarios , please refere the advance guide. [advance simulation](simulator/README.md) 
+ 
 
-For easy use few scripts are added to start the simulator
-   
-* [Funnel Analysis]  : ./bin/start_funnel_kafka.sh 
-* [Car Insurance]  :  ./bin/start_insurance_kafka.sh
-* [GPS] : ./bin/start_gps_kafka.sh
-* [Transportation (Trucks)] : ./bin/start_truck_kafka.sh
+
+
+
+
+ 
