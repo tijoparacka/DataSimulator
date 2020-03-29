@@ -28,5 +28,12 @@
       </includes>
       <outputDirectory>lib</outputDirectory>
     </fileSet>
+    <fileSet>
+      <directory>examples</directory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+      <outputDirectory>examples</outputDirectory>
+    </fileSet>
   </fileSets>
 </assembly>
