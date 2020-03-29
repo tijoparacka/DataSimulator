@@ -44,7 +44,11 @@
 			<artifactId>akka-actor_2.10</artifactId>
 			<version>2.3-M1</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.jsonschema2pojo</groupId>
+			<artifactId>jsonschema2pojo-core</artifactId>
+			<version>0.4.35</version>
+		</dependency>
 			<!--
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-core</artifactId>
