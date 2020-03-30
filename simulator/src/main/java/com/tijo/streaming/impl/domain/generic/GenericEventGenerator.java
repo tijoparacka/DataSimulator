@@ -122,7 +122,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
       }
     }
     sb.append("}");
-    System.out.println(sb.toString());
+   // System.out.println(sb.toString());
     try {
       return (GenericEvent) mapper.readValue(sb.toString(), eventClass );
     }
