@@ -1,4 +1,4 @@
-package com.tijo.streaming;
+package com.tijo.streaming.util;
 
 public class Util
 {
