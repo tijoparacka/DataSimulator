@@ -59,13 +59,13 @@ Config Properties
  
  | Type| Details | Options |
  |-----|---------|---------|
- |FIXED| Used to create random data from a fixed  list of values.| 1. "file":name of the file where the list of data is saved. 2. "limit" :the size of the data ( this is used when gencardinality.sh is used to create the list of random data) 3. "cardinality": cardinality of the data|
- |STRING| Used to geneate random  String | 1. "limit" : the length of the string to be generated|
- |INT| Used for creating random integer value | 1. "limit" : Max value of the Integer to be generated. This should not be more than Integer.MAX_VALUE.|
- |LONG| Used for creating random Long value | 1. "limit" : Max value of the Long to be generated. This should not be more than Long.MAX_VALUE.|
- |DOUBLE|  Used for creating random Double value | 1. "limit" : Max value of the Double  to be generated. This should not be more than Double.MAX_VALUE.|
- |DATE_RANGE| Used to generate date from a start time in milli sec to end time in millisecond .|1. "start" : start time in millisecond  2. "end": end time in millisecond |
- |DATE| Generate the current time at which the simulation happens.| With the option limit you can give a variance to simulate the late arrival of data|
+ |`FIXED`| Used to create random data from a fixed  list of values.| 1. "file":name of the file where the list of data is saved. 2. "limit" :the size of the data ( this is used when gencardinality.sh is used to create the list of random data) 3. "cardinality": cardinality of the data|
+ |`STRING`| Used to geneate random  String | 1. "limit" : the length of the string to be generated|
+ |`INT`| Used for creating random integer value | 1. "limit" : Max value of the Integer to be generated. This should not be more than Integer.MAX_VALUE.|
+ |`LONG`| Used for creating random Long value | 1. "limit" : Max value of the Long to be generated. This should not be more than Long.MAX_VALUE.|
+ |`DOUBLE`|  Used for creating random Double value | 1. "limit" : Max value of the Double  to be generated. This should not be more than Double.MAX_VALUE.|
+ |`DATE_RANGE`| Used to generate date from a start time in milli sec to end time in millisecond .|1. "start" : start time in millisecond  2. "end": end time in millisecond |
+ |`DATE`| Generate the current time at which the simulation happens.| With the option limit you can give a variance to simulate the late arrival of data|
  
   
  Please refer the example configs to write a your own metadata.
