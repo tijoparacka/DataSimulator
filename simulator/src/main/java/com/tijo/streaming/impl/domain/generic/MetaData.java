@@ -1,15 +1,62 @@
 package com.tijo.streaming.impl.domain.generic;
 
+import java.text.SimpleDateFormat;
+
 public class MetaData
 {
   private String dimension;
   private String type;
   private Double limit;
-  private Double start;
-  private Double end;
+  private String start;
+  private String end;
   private String file;
+  private String format;
   private Integer cardinality;
   private String[] constants;
+  private long longStart;
+  private long longEnd;
+
+  public SimpleDateFormat getDateFormatter()
+  {
+    return dateFormatter;
+  }
+
+  public void setDateFormatter(SimpleDateFormat dateFormatter)
+  {
+    this.dateFormatter = dateFormatter;
+  }
+
+  private SimpleDateFormat dateFormatter ;
+
+  public long getLongStart()
+  {
+    return longStart;
+  }
+
+  public long getLongEnd()
+  {
+    return longEnd;
+  }
+
+  public void setLongStart(long longStart)
+  {
+    this.longStart = longStart;
+  }
+
+  public void setLongEnd(long longEnd)
+  {
+    this.longEnd = longEnd;
+  }
+
+  public String getFormat()
+  {
+    return format;
+  }
+
+  public void setFormat(String format)
+  {
+    this.format = format;
+  }
 
   public String getType()
   {
@@ -59,22 +106,22 @@ public class MetaData
     this.file = file;
   }
 
-  public Double getStart()
+  public String getStart()
   {
     return start;
   }
 
-  public void setStart(Double start)
+  public void setStart(String start)
   {
     this.start = start;
   }
 
-  public Double getEnd()
+  public String getEnd()
   {
     return end;
   }
 
-  public void setEnd(Double end)
+  public void setEnd(String end)
   {
     this.end = end;
   }
