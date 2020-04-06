@@ -25,6 +25,7 @@
       <directory>../simulator/target/</directory>
       <includes>
         <include>simulator-*-with-dependencies.jar</include>
+        <include>log4j.xml</include>
       </includes>
       <outputDirectory>lib</outputDirectory>
     </fileSet>
