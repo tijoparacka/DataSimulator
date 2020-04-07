@@ -43,11 +43,13 @@ public class JsonToPojo
                 return true;
             }
             public SourceType getSourceType(){
-      return SourceType.JSON;  
+      return SourceType.JSONSCHEMA;
     }  
           };  
-          SchemaMapper mapper = new SchemaMapper(new RuleFactory(config, new Jackson2Annotator(config), new SchemaStore()), new SchemaGenerator());
-          mapper.generate(codeModel,className,packageName,source);
+  //        SchemaMapper mapper = new SchemaMapper(new RuleFactory(config, new Jackson2Annotator(config), new SchemaStore()), new SchemaGenerator());
+  //        mapper.generate(codeModel,className,packageName,source);
+            SchemaMapper mapper = new SchemaMapper(new RuleFactory(config, new Jackson2Annotator(config), new SchemaStore()), new SchemaGenerator());
+            mapper.generate(codeModel,className,packageName,source);
 
        codeModel.build(outputPojoDirectory);
      }  

@@ -25,6 +25,7 @@
       <directory>../simulator/target/</directory>
       <includes>
         <include>simulator-*-with-dependencies.jar</include>
+        <include>log4j.xml</include>
       </includes>
       <outputDirectory>lib</outputDirectory>
     </fileSet>
@@ -34,6 +35,13 @@
         <include>**/*</include>
       </includes>
       <outputDirectory>examples</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>../</directory>
+      <includes>
+        <include>README.md</include>
+      </includes>
+      <outputDirectory>doc</outputDirectory>
     </fileSet>
   </fileSets>
 </assembly>

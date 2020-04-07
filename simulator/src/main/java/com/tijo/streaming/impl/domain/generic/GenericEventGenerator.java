@@ -14,10 +14,13 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
+
 
 public class GenericEventGenerator extends AbstractEventEmitter
 {
@@ -42,6 +45,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
   ObjectMapper mapper = new ObjectMapper();
   Class eventClass ;
   String dir ;
+  long sleepTime = 0;
   public GenericEventGenerator() throws Exception
   {
     try {
@@ -50,6 +54,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
       //String dimFiles = config.getConfig("sim.generic.dimension.files");
       String metaDataJson=config.getConfig("sim.generic.metadata");
       this.dir=config.getConfig( "sim.cardinality.generator.folder");
+      this.sleepTime = config.getConfig( "sim.generator.sleepTimeMilliSec") != null? Long.parseLong( config.getConfig( "sim.generator.sleepTimeMilliSec") ):0 ;
       ObjectMapper objectMapper = new ObjectMapper();
       this.metaDatas =objectMapper.readValue(metaDataJson, MetaData[].class);
       this.eventClass= Class.forName(config.getConfig("sim.generic.eventClass"));
@@ -59,15 +64,34 @@ public class GenericEventGenerator extends AbstractEventEmitter
       throw new Exception("ioooooo poneeee.....");
     }
 
+    SimpleDateFormat sf =null;
     for (MetaData metaData : metaDatas) {
       try {
-        if (metaData.getType().equalsIgnoreCase(FIXED)) {
-          List<String> dimData = new ArrayList<>(Files.readAllLines(Paths.get(dir+"/"+metaData.getFile()), StandardCharsets.UTF_8));
-          dim.put(metaData.getDimension(), dimData);
+        switch (metaData.getType()) {
+          case FIXED :
+            List<String> dimData = new ArrayList<>(Files.readAllLines(Paths.get(dir+"/"+metaData.getFile()), StandardCharsets.UTF_8));
+            dim.put(metaData.getDimension(), dimData);
+            break;
+          case DATE:
+            if(metaData.getFormat() != null ){
+              sf = new SimpleDateFormat(metaData.getFormat());
+              metaData.setDateFormatter(sf);
+            }else{
+              throw new Exception (" Please specify a Java Date format");
+            }
+            break;
+          case DATE_RANGE :
+            if(metaData.getFormat() != null ){
+              sf = new SimpleDateFormat(metaData.getFormat());
+              metaData.setLongStart(sf.parse(metaData.getStart()).getTime());
+              metaData.setLongEnd(sf.parse(metaData.getEnd()).getTime());
+              metaData.setDateFormatter(sf);
+            }else{
+              throw new Exception (" Please specify a Java Date format");
+            }
+            break;
         }
-        else{
-          System.out.println("Cardinality not loading for "+ metaData.getDimension());
-        }
+
       }
       catch (IOException e) {
         e.printStackTrace();
@@ -85,7 +109,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
       MetaData m = metaDatas[i];
       if (i != 0)
         sb.append(",");
-
+      String date =null;
       sb.append("\"").append(m.getDimension() ).append("\":");
       switch (m.getType()) {
         case FIXED :
@@ -102,27 +126,44 @@ public class GenericEventGenerator extends AbstractEventEmitter
           sb.append("\"").append(m.getConstants() [randomUtil.nextInt(len)]).append("\"");
           break;
         case INT:
-          sb.append(rand.nextInt(0,m.getLimit().intValue()));
-          break;
 
+          int intVal =rand.nextInt(0,m.getLimit().intValue());
+          if(m.getFormat()!=null && m.getFormat().length() != 0 ){
+            sb.append(String.format(m.getFormat(),intVal));
+          }else{
+            sb.append(intVal);
+          }
+          break;
         case LONG:
-          sb.append(rand.nextLong(0,m.getLimit().longValue()));
+          long longVal =rand.nextLong(0,m.getLimit().longValue());
+          if(m.getFormat()!=null && m.getFormat().length() != 0 ){
+            sb.append(String.format(m.getFormat(),longVal));
+          }else{
+            sb.append(longVal);
+          }
           break;
         case DOUBLE:
-          sb.append(randomUtil.nextDouble() * m.getLimit());
+          double doubleVal =randomUtil.nextDouble() * m.getLimit();
+          if(m.getFormat()!=null  && m.getFormat().length() != 0 ){
+            sb.append(String.format(m.getFormat(),doubleVal));
+          }else{
+            sb.append(doubleVal);
+          }
           break;
         case DATE_RANGE:
-          sb.append(rand.nextLong( m.getStart().longValue(),  m.getEnd().longValue()));
+          date = m.getDateFormatter().format(new Date (rand.nextLong( m.getLongStart(),  m.getLongEnd()) ));
+          sb.append('"').append(date).append('"');
           break;
         case DATE:
-          sb.append(System.currentTimeMillis()- rand.nextLong(0,m.getLimit().longValue()));
+          date = m.getDateFormatter().format(new Date(System.currentTimeMillis() - rand.nextLong(0, m.getLimit().longValue() )));
+          sb.append('"').append(date).append('"');
           break;
         default:
           throw new IllegalStateException("Unexpected value: " + m.getType());
       }
     }
     sb.append("}");
-   // System.out.println(sb.toString());
+    logger.debug(sb.toString());
     try {
       return (GenericEvent) mapper.readValue(sb.toString(), eventClass );
     }
@@ -142,6 +183,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
       while (true) {
         GenericEvent event = generateEvent();
         actor.tell(event, this.getSelf());
+        Thread.sleep(sleepTime);
 
       }
     }

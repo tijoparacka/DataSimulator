@@ -27,7 +27,7 @@ Building From Source
 
 Downloading from s3 location
 ---------------------------- 
-Imply employees can download the binaries from s3 location: s3://implytt/tools/datasimulator/ 
+Imply employees can download the binaries from s3 location: s3://imply-ps-tools/datasimulator/ 
 
 Running the simulator
 -------------------- 
@@ -64,7 +64,7 @@ Config Properties
  |`INT`| Used for creating random integer value | 1. "limit" : Max value of the Integer to be generated. This should not be more than Integer.MAX_VALUE.|
  |`LONG`| Used for creating random Long value | 1. "limit" : Max value of the Long to be generated. This should not be more than Long.MAX_VALUE.|
  |`DOUBLE`|  Used for creating random Double value | 1. "limit" : Max value of the Double  to be generated. This should not be more than Double.MAX_VALUE.|
- |`DATE_RANGE`| Used to generate date from a start time in milli sec to end time in millisecond .|1. "start" : start time in millisecond  2. "end": end time in millisecond |
+ |`DATE_RANGE`| Used to generate date from a start time  to end time .|1. "start" : start time  considering for simulation,   2. "end": end time in date format mentioned . eg : {"dimension" : "start_time" ,"type":"DATE","start":"2010-06-01 00:00:00","end":"2020-06-01 00:00:00","limit":10000,"format":"yyyy-MM-dd mm:HH:ss"}|
  |`DATE`| Generate the current time at which the simulation happens.| With the option limit you can give a variance to simulate the late arrival of data|
  
   
@@ -73,7 +73,7 @@ Config Properties
  This simulator can approximately generate 50,000 data points in a 8 core machine with high speed Hard disk.  There is no limit to generate data to push the data to kafka by running the simulator to multiple machine. 
  
  
- If you want to simulate specific scenarios , please refere the advance guide. [advance simulation](simulator/README.md) 
+ If you want to simulate specific scenarios , please refer the advance guide. [advance simulation](simulator/README.md) 
  
 
 
