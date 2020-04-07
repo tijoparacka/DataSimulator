@@ -36,5 +36,12 @@
       </includes>
       <outputDirectory>examples</outputDirectory>
     </fileSet>
+    <fileSet>
+      <directory>../</directory>
+      <includes>
+        <include>README.md</include>
+      </includes>
+      <outputDirectory>doc</outputDirectory>
+    </fileSet>
   </fileSets>
 </assembly>
