@@ -27,7 +27,7 @@ Building From Source
 
 Downloading from s3 location
 ---------------------------- 
-Imply employees can download the binaries from s3 location: s3://implytt/tools/datasimulator/ 
+Imply employees can download the binaries from s3 location: s3://imply-ps-tools/datasimulator/ 
 
 Running the simulator
 -------------------- 
