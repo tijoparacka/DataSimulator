@@ -1,0 +1,266 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "__time",
+        "added",
+        "channel",
+        "cityName",
+        "comment",
+        "commentLength",
+        "countryIsoCode",
+        "countryName",
+        "deleted",
+        "delta",
+        "deltaBucket",
+        "diffUrl",
+        "flags",
+        "isAnonymous",
+        "isMinor",
+        "isNew",
+        "isRobot",
+        "isUnpatrolled",
+        "namespace",
+        "page",
+        "regionIsoCode",
+        "regionName",
+        "user"
+    ],
+    "properties": {
+        "__time": {
+            "$id": "#/properties/__time",
+            "type": "string",
+            "title": "The __time Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2016-06-27T00:00:11.080Z"
+            ]
+        },
+        "added": {
+            "$id": "#/properties/added",
+            "type": "integer",
+            "title": "The Added Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                31.0
+            ]
+        },
+        "channel": {
+            "$id": "#/properties/channel",
+            "type": "string",
+            "title": "The Channel Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "#sv.wikipedia"
+            ]
+        },
+        "cityName": {
+            "$id": "#/properties/cityName",
+            "type": "string",
+            "title": "The Cityname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "comment": {
+            "$id": "#/properties/comment",
+            "type": "string",
+            "title": "The Comment Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Botskapande Indonesien omdirigering"
+            ]
+        },
+        "commentLength": {
+            "$id": "#/properties/commentLength",
+            "type": "integer",
+            "title": "The Commentlength Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                35.0
+            ]
+        },
+        "countryIsoCode": {
+            "$id": "#/properties/countryIsoCode",
+            "type": "string",
+            "title": "The Countryisocode Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "countryName": {
+            "$id": "#/properties/countryName",
+            "type": "string",
+            "title": "The Countryname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "deleted": {
+            "$id": "#/properties/deleted",
+            "type": "integer",
+            "title": "The Deleted Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0.0
+            ]
+        },
+        "delta": {
+            "$id": "#/properties/delta",
+            "type": "integer",
+            "title": "The Delta Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                31.0
+            ]
+        },
+        "deltaBucket": {
+            "$id": "#/properties/deltaBucket",
+            "type": "integer",
+            "title": "The Deltabucket Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0.0
+            ]
+        },
+        "diffUrl": {
+            "$id": "#/properties/diffUrl",
+            "type": "string",
+            "title": "The Diffurl Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://sv.wikipedia.org/w/index.php?oldid=36099284&rcid=89369918"
+            ]
+        },
+        "flags": {
+            "$id": "#/properties/flags",
+            "type": "string",
+            "title": "The Flags Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "NB"
+            ]
+        },
+        "isAnonymous": {
+            "$id": "#/properties/isAnonymous",
+            "type": "string",
+            "title": "The Isanonymous Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "false"
+            ]
+        },
+        "isMinor": {
+            "$id": "#/properties/isMinor",
+            "type": "string",
+            "title": "The Isminor Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "false"
+            ]
+        },
+        "isNew": {
+            "$id": "#/properties/isNew",
+            "type": "string",
+            "title": "The Isnew Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "true"
+            ]
+        },
+        "isRobot": {
+            "$id": "#/properties/isRobot",
+            "type": "string",
+            "title": "The Isrobot Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "true"
+            ]
+        },
+        "isUnpatrolled": {
+            "$id": "#/properties/isUnpatrolled",
+            "type": "string",
+            "title": "The Isunpatrolled Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "false"
+            ]
+        },
+        "namespace": {
+            "$id": "#/properties/namespace",
+            "type": "string",
+            "title": "The Namespace Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Main"
+            ]
+        },
+        "page": {
+            "$id": "#/properties/page",
+            "type": "string",
+            "title": "The Page Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Salo Toraut"
+            ]
+        },
+        "regionIsoCode": {
+            "$id": "#/properties/regionIsoCode",
+            "type": "string",
+            "title": "The Regionisocode Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "regionName": {
+            "$id": "#/properties/regionName",
+            "type": "string",
+            "title": "The Regionname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "user": {
+            "$id": "#/properties/user",
+            "type": "string",
+            "title": "The User Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Lsjbot"
+            ]
+        }
+    }
+}
