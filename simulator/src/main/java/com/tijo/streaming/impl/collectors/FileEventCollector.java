@@ -40,15 +40,15 @@ public class FileEventCollector extends AbstractEventCollector{
         maxRows =Integer.parseInt(rows );
       }
 
-      logger.info("Setting up output Folder " +  outputPath+ " with max rows in each file is "+maxRows);
+      logger.info("Setting up output Folder :" +  outputPath+ " with max rows in each file is "+maxRows);
        this.path = getNewPath(fileNameLength);
 
        writer = new BufferedWriter(new FileWriter(String.valueOf(path)));
 
     } catch (Exception e) {
-    e.printStackTrace();
-    logger.error(e.getMessage(), e);
-    System.exit(1);
+      e.printStackTrace();
+      logger.error(e.getMessage(), e);
+      System.exit(1);
     }
   }
 
@@ -71,7 +71,6 @@ public class FileEventCollector extends AbstractEventCollector{
   public void onReceive(Object message) throws Exception {
     if (message instanceof DumpStats) {
       logger.info("Processed " + numberOfEventsProcessed + " events");
-
     }else if( message instanceof Event ) {
       numberOfEventsProcessed ++;
      // logger.info("Event " +numberOfEventsProcessed );
