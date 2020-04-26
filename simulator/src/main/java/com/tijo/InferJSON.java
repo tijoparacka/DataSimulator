@@ -29,9 +29,9 @@ public class InferJSON
     String baseDir = args[0];
     ConfigUtil conf = new ConfigUtil(args[1]);
     String packageName = conf.getConfig("sim.generic.infer.packageName");
-    String jsonPath = conf.getConfig("sim.generic.infer.jsonPath");
+    String jsonPath = baseDir+File.separator+conf.getConfig("sim.generic.infer.jsonPath");
     String genCode = conf.getConfig("sim.generic.infer.generateCode");
-    String pojoOutput = conf.getConfig("sim.generic.infer.pojoOutputDir");
+    String pojoOutput = baseDir+File.separator+conf.getConfig("sim.generic.infer.pojoOutputDir");
     if(pojoOutput == null)
       pojoOutput = "pojoOutput";
 
@@ -39,7 +39,7 @@ public class InferJSON
       throw  new Exception("sim.generic.infer.jsonPath should ends with .json");
     }
     File jsonFile = new File(jsonPath);
-    String className = jsonPath.replace(".json","");
+    String className = jsonFile.getName().replace(".json","");
     File pojoOutputDir = new File(pojoOutput);
     pojoOutputDir.mkdirs();
 
