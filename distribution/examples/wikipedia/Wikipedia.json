@@ -7,7 +7,7 @@
     "default": {},
     "additionalProperties": true,
     "required": [
-        "__time",
+        "time",
         "added",
         "channel",
         "cityName",
@@ -32,10 +32,10 @@
         "user"
     ],
     "properties": {
-        "__time": {
-            "$id": "#/properties/__time",
+        "time": {
+            "$id": "#/properties/time",
             "type": "string",
-            "title": "The __time Schema",
+            "title": "The time Schema",
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
