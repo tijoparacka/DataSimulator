@@ -17,14 +17,14 @@ import java.nio.file.Paths;
 public class CardinalityGenerator
 {
   private static MetaData[] metaDatas;
-
+  private static String baseDir ;
   public static void main(String[] args) throws Exception
   {
     if (args != null && args.length != 2) {
       System.out.println(" Please provide a config file .");
       System.exit(0);
     }
-    String baseDir = args[0];
+    baseDir = args[0];
     ConfigUtil conf = new ConfigUtil(args[1]);
     String metaDataJson = conf.getConfig("sim.generic.metadata");
     ObjectMapper objectMapper = new ObjectMapper();
@@ -59,7 +59,7 @@ public class CardinalityGenerator
   {
 
     StringBuilder sb = new StringBuilder();
-    String dir = conf.getConfig("sim.cardinality.generator.folder");
+    String dir = baseDir+File.separator+conf.getConfig("sim.cardinality.generator.folder");
     File dirFile = new File(dir);
     dirFile.mkdirs();
     for (int i = 0; i < cardinality; i++) {
