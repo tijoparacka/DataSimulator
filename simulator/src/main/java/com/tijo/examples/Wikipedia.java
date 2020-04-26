@@ -20,11 +20,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * The Root Schema
  * <p>
  * The root schema comprises the entire JSON document.
- * 
+ *
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "__time",
+    "time",
     "added",
     "channel",
     "cityName",
@@ -51,13 +51,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Wikipedia extends GenericEvent {
 
     /**
-     * The __time Schema
+     * The time Schema
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
-    @JsonProperty("__time")
+    @JsonProperty("time")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
     private String time = "";
     /**
@@ -65,7 +65,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("added")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -75,7 +75,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("channel")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -85,7 +85,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("cityName")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -95,7 +95,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("comment")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -105,7 +105,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("commentLength")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -115,7 +115,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("countryIsoCode")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -125,7 +125,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("countryName")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -135,7 +135,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("deleted")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -145,7 +145,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("delta")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -155,7 +155,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("deltaBucket")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -165,7 +165,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("diffUrl")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -175,7 +175,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("flags")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -185,7 +185,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isAnonymous")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -195,7 +195,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isMinor")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -205,7 +205,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isNew")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -215,7 +215,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isRobot")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -225,7 +225,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isUnpatrolled")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -235,7 +235,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("namespace")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -245,7 +245,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("page")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -255,7 +255,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("regionIsoCode")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -265,7 +265,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("regionName")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -275,7 +275,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("user")
     @JsonPropertyDescription("An explanation about the purpose of this instance.")
@@ -284,25 +284,25 @@ public class Wikipedia extends GenericEvent {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
-     * The __time Schema
+     * The time Schema
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
-    @JsonProperty("__time")
+    @JsonProperty("time")
     public String getTime() {
         return time;
     }
 
     /**
-     * The __time Schema
+     * The time Schema
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
-    @JsonProperty("__time")
+    @JsonProperty("time")
     public void setTime(String time) {
         this.time = time;
     }
@@ -317,7 +317,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("added")
     public Integer getAdded() {
@@ -329,7 +329,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("added")
     public void setAdded(Integer added) {
@@ -346,7 +346,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("channel")
     public String getChannel() {
@@ -358,7 +358,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("channel")
     public void setChannel(String channel) {
@@ -375,7 +375,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("cityName")
     public String getCityName() {
@@ -387,7 +387,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("cityName")
     public void setCityName(String cityName) {
@@ -404,7 +404,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("comment")
     public String getComment() {
@@ -416,7 +416,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("comment")
     public void setComment(String comment) {
@@ -433,7 +433,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("commentLength")
     public Integer getCommentLength() {
@@ -445,7 +445,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("commentLength")
     public void setCommentLength(Integer commentLength) {
@@ -462,7 +462,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("countryIsoCode")
     public String getCountryIsoCode() {
@@ -474,7 +474,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("countryIsoCode")
     public void setCountryIsoCode(String countryIsoCode) {
@@ -491,7 +491,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("countryName")
     public String getCountryName() {
@@ -503,7 +503,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("countryName")
     public void setCountryName(String countryName) {
@@ -520,7 +520,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("deleted")
     public Integer getDeleted() {
@@ -532,7 +532,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("deleted")
     public void setDeleted(Integer deleted) {
@@ -549,7 +549,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("delta")
     public Integer getDelta() {
@@ -561,7 +561,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("delta")
     public void setDelta(Integer delta) {
@@ -578,7 +578,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("deltaBucket")
     public Integer getDeltaBucket() {
@@ -590,7 +590,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("deltaBucket")
     public void setDeltaBucket(Integer deltaBucket) {
@@ -607,7 +607,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("diffUrl")
     public String getDiffUrl() {
@@ -619,7 +619,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("diffUrl")
     public void setDiffUrl(String diffUrl) {
@@ -636,7 +636,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("flags")
     public String getFlags() {
@@ -648,7 +648,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("flags")
     public void setFlags(String flags) {
@@ -665,7 +665,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isAnonymous")
     public String getIsAnonymous() {
@@ -677,7 +677,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isAnonymous")
     public void setIsAnonymous(String isAnonymous) {
@@ -694,7 +694,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isMinor")
     public String getIsMinor() {
@@ -706,7 +706,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isMinor")
     public void setIsMinor(String isMinor) {
@@ -723,7 +723,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isNew")
     public String getIsNew() {
@@ -735,7 +735,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isNew")
     public void setIsNew(String isNew) {
@@ -752,7 +752,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isRobot")
     public String getIsRobot() {
@@ -764,7 +764,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isRobot")
     public void setIsRobot(String isRobot) {
@@ -781,7 +781,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isUnpatrolled")
     public String getIsUnpatrolled() {
@@ -793,7 +793,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("isUnpatrolled")
     public void setIsUnpatrolled(String isUnpatrolled) {
@@ -810,7 +810,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("namespace")
     public String getNamespace() {
@@ -822,7 +822,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("namespace")
     public void setNamespace(String namespace) {
@@ -839,7 +839,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("page")
     public String getPage() {
@@ -851,7 +851,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("page")
     public void setPage(String page) {
@@ -868,7 +868,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("regionIsoCode")
     public String getRegionIsoCode() {
@@ -880,7 +880,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("regionIsoCode")
     public void setRegionIsoCode(String regionIsoCode) {
@@ -897,7 +897,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("regionName")
     public String getRegionName() {
@@ -909,7 +909,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("regionName")
     public void setRegionName(String regionName) {
@@ -926,7 +926,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("user")
     public String getUser() {
@@ -938,7 +938,7 @@ public class Wikipedia extends GenericEvent {
      * <p>
      * An explanation about the purpose of this instance.
      * (Required)
-     * 
+     *
      */
     @JsonProperty("user")
     public void setUser(String user) {
