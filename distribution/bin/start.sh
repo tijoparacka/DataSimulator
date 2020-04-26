@@ -12,7 +12,7 @@ java -server -Xmx2048m \
 -XX:+HeapDumpOnOutOfMemoryError \
 -XX:+ExitOnOutOfMemoryError \
 -XX:+PrintGC \
--XX:HeapDumpPath=/tmp/druid-heap.hprof-cp "$jarpath" com.tijo.DataSimulator $bin_dir/../ "$@" 2>$1 &
+-XX:HeapDumpPath=/tmp/druid-heap.hprof -cp "$jarpath" com.tijo.DataSimulator $bin_dir/../ "$@" 2>$1 &
 _pid=$!
 echo "$_pid" > $bin_dir/../app.pid
 
