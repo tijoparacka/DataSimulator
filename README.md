@@ -22,7 +22,7 @@ Building From Source
 2. Download the source code from github. [DataSimulator](https://github.com/tijoparacka/DataSimulator)
 3. Execute the following maven command to build the binaries. 
      `` mvn package -DskipTests``
-4. The binaries are created with in the distribution/target/data-simulator-1.1.1-bin.zip
+4. The binaries are created with in the distribution/target/data-simulator-x.x.x-bin.zip
 5. Unzip this binary to get started . 
 
 Downloading from s3 location
