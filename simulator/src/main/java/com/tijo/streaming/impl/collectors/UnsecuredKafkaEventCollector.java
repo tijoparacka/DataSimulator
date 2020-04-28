@@ -9,12 +9,16 @@ import com.tijo.streaming.impl.messages.DumpStats;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.Properties;
 
 public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
     private String topicName;
     private String bootstrapServer;
     private Properties props;
+    private  int maxLoggingRows;
+    private long startTime =System.currentTimeMillis();
     private org.apache.kafka.clients.producer.Producer<String, String> producer;
 
     public UnsecuredKafkaEventCollector() {
@@ -32,6 +36,13 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
             props.put("value.serializer",
                     "org.apache.kafka.common.serialization.StringSerializer");
             producer = new KafkaProducer<String, String>(props);
+            String rows =config.getConfig("sim.logging.rowCount");
+            if(rows != null &&  rows.trim().length() == 0 ){
+                maxLoggingRows = 5000000;
+                logger.info("Max Rows is not configured. Defaulting to 5,000,000");
+            }else{
+                maxLoggingRows =Integer.parseInt(rows );
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -54,8 +65,11 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
                 producer.send(new ProducerRecord<String, String>(topicName,
                                                                  ((Event) message).toText().replace("\n", "")));
                 numberOfEventsProcessed++;
-                if(numberOfEventsProcessed %100 ==0)
-                    logger.info("Produced 100 event "  );
+                if(numberOfEventsProcessed % maxLoggingRows == 0){
+                    logger.info("Processed " + numberOfEventsProcessed + " events");
+                 //   logger.info("Number of events processed per sec  = " + (maxLoggingRows /(  (System.currentTimeMillis() - startTime ) * 1000))) ;
+                 //   startTime = System.currentTimeMillis();
+                }
             }
             catch (Exception e) {
                 logger.error(e.getMessage(), e);
