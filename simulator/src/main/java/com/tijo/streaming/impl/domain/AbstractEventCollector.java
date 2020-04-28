@@ -7,7 +7,7 @@ import akka.actor.UntypedActor;
 public abstract class AbstractEventCollector extends UntypedActor {
 	protected int maxNumberOfEvents = -1;
 	protected Logger logger = Logger.getLogger(this.getClass());
-	protected int numberOfEventsProcessed = 0;
+	protected long numberOfEventsProcessed = 0;
 
 	public AbstractEventCollector() {
 	}
