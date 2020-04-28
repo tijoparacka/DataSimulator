@@ -6,12 +6,12 @@
       <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
     </layout>
   </appender>
-
-  <logger name="com.howtodoinjava.web.controller">
+<!--
+  <logger name="com.tijo.*">
     <level value="INFO" />
     <appender-ref ref="console" />
   </logger>
-
+-->
   <root>
     <level value="DEBUG" />
     <appender-ref ref="console"></appender>
