@@ -37,6 +37,13 @@
       <outputDirectory>examples</outputDirectory>
     </fileSet>
     <fileSet>
+      <directory>cluster</directory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+      <outputDirectory>cluster</outputDirectory>
+    </fileSet>
+    <fileSet>
       <directory>../</directory>
       <includes>
         <include>README.md</include>
