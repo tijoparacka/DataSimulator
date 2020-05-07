@@ -1,0 +1,8 @@
+---
+
+- name: Installing simulator
+  gather_facts: true
+  become: true
+  hosts: simulator
+  roles:
+    - install

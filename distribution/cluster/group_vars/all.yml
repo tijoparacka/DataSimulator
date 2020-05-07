@@ -1,0 +1,10 @@
+---
+simulator_dir: /opt/simulator
+#path is relative to cluster/files
+sim_package_path: ../../data-simulator-1.2.1-bin.tar.gz
+sim_config_path: /opt/simulator/data-simulator-1.2.1/conf/config.properties
+#path is relative to cluster/files
+local_sim_schema: ../examples/wikipedia/Wikipedia.json
+remote_sim_schema: /opt/simulator/data-simulator-1.2.1/conf/Wikipedia.json
+kafka_bootstrap_server: 127.0.0.1
+kafka_bootstrap_port: 9092
