@@ -27,12 +27,12 @@ public class DataSimulator
 	public static String getConfigFilePath(){return configFilePath;}
 	private static  Class eventClass ;
 
-	public static int getNumberOfEvents()
+	public static long getNumberOfEvents()
 	{
 		return numberOfEvents;
 	}
 
-	private static int numberOfEvents;
+	private static long  numberOfEvents;
 	public static Class getEventClass()
 	{
 		return eventClass;
