@@ -74,6 +74,10 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
             catch (Exception e) {
                 logger.error(e.getMessage(), e);
             }
+            if(DataSimulator.getNumberOfEvents() >0 )
+                if(numberOfEventsProcessed > DataSimulator.getNumberOfEvents()){
+                    System.exit(0);
+                }
         }
     }
 }
