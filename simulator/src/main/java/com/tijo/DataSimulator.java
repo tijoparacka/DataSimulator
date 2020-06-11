@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import com.tijo.config.ConfigUtil;
+import com.tijo.streaming.impl.collectors.DefaultEventCollector;
 import com.tijo.streaming.impl.messages.StartSimulation;
 import com.tijo.streaming.impl.messages.StopSimulation;
 import com.tijo.streaming.listeners.SimulatorListener;
@@ -48,6 +49,7 @@ public class DataSimulator
 				numberOfEvents = Integer.parseInt(args[2]);
 				final Class eventEmitterClass = Class.forName(args[3]);
 				final Class eventCollectorClass = Class.forName(args[4]);
+				//final Class eventCollectorClassSensitive = Class.forName("com.tijo.streaming.impl.collectors.DefaultEventCollector
 				//eventClass =
 				configFilePath=args[6];
 				ConfigUtil conf = new ConfigUtil(configFilePath);
@@ -70,6 +72,7 @@ public class DataSimulator
 				final ActorRef eventCollector = system.actorOf(
 						Props.create(eventCollectorClass), "eventCollector");
 				System.out.println(eventCollector.path());
+
 				final ActorRef master = system.actorOf(new Props(
 						new UntypedActorFactory() {
 							public UntypedActor create() {
