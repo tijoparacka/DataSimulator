@@ -13,6 +13,30 @@ public class MetaData
   private String format;
   private Integer cardinality;
   private String[] constants;
+
+  public String getScript()
+  {
+    return script;
+  }
+
+  public void setScript(String script)
+  {
+    this.script = script;
+  }
+
+  private String script;
+
+  public String getReferenceDim()
+  {
+    return referenceDim;
+  }
+
+  public void setReferenceDim(String referenceDim)
+  {
+    this.referenceDim = referenceDim;
+  }
+
+  private String referenceDim;
   private long longStart;
   private long longEnd;
 
@@ -90,9 +114,6 @@ public class MetaData
 
   public String getFile()
   {
-    if (!this.type.equalsIgnoreCase( GenericEventGenerator.FIXED) &&  getFile()!= null){
-      throw new IllegalStateException("Unexpected value: "+getFile() +" for "+this.type );
-    }
     return file;
   }
 
