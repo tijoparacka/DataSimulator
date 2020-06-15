@@ -101,7 +101,7 @@ public class KinesisEventCollector2 extends AbstractEventCollector
       try {
 
         PutRecordsRequestEntry putRecordsRequestEntry  = new PutRecordsRequestEntry();
-        byte[] bytes= ((Event) message).toText().replace("\n", "").getBytes();
+        byte[] bytes= (writer.writeValueAsString((Event) message)).replace("\n", "").getBytes();
         putRecordsRequestEntry.setData(ByteBuffer.wrap(bytes));
         putRecordsRequestEntry.setPartitionKey(String.format( "sim-%d",MurmurHash3.hash32x86(bytes)));
         putRecordsRequestEntryList.add(putRecordsRequestEntry);

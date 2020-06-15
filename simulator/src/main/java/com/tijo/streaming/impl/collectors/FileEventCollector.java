@@ -22,7 +22,7 @@ public class FileEventCollector extends AbstractEventCollector{
   private  int maxRows;
   private Path path ;
   private int fileNameLength;
-  BufferedWriter writer ;
+  BufferedWriter fileWriter;
   private long startTime =System.currentTimeMillis();
   public FileEventCollector()
   {
@@ -43,7 +43,7 @@ public class FileEventCollector extends AbstractEventCollector{
       logger.info("Setting up output Folder :" +  outputPath+ " with max rows in each file is "+maxRows);
        this.path = getNewPath(fileNameLength);
 
-       writer = new BufferedWriter(new FileWriter(String.valueOf(path)));
+      fileWriter = new BufferedWriter(new FileWriter(String.valueOf(path)));
 
     } catch (Exception e) {
       e.printStackTrace();
@@ -75,16 +75,16 @@ public class FileEventCollector extends AbstractEventCollector{
       numberOfEventsProcessed ++;
      // logger.info("Event " +numberOfEventsProcessed );
 //      Files.write(path, (((Event)message ).toText()+"\n").getBytes(StandardCharsets.UTF_8), StandardOpenOption.APPEND);
-        writeFile(path, (((Event)message ).toText()+"\n").getBytes(StandardCharsets.UTF_8), StandardOpenOption.APPEND);
+        writeFile(path, (writer.writeValueAsString((Event)message )+"\n").getBytes(StandardCharsets.UTF_8), StandardOpenOption.APPEND);
     }
     if(numberOfEventsProcessed % maxRows == 0){
       logger.info("Processed " + numberOfEventsProcessed + " events");
       logger.info("Number of events processed per sec  = " + (maxRows /(  (System.currentTimeMillis() - startTime ) /1000))) ;
       startTime = System.currentTimeMillis();
       this.path = getNewPath(fileNameLength);
-      writer.flush();
-      writer.close();
-      writer = new BufferedWriter(new FileWriter(path.toString()));
+      fileWriter.flush();
+      fileWriter.close();
+      fileWriter = new BufferedWriter(new FileWriter(path.toString()));
     }
     if(DataSimulator.getNumberOfEvents() >0 )
       if(numberOfEventsProcessed > DataSimulator.getNumberOfEvents()){
@@ -94,7 +94,7 @@ public class FileEventCollector extends AbstractEventCollector{
 
   private void writeFile(Path path, byte[] bytes, StandardOpenOption append) throws IOException
   {
-    writer.write(new String(bytes));
+    fileWriter.write(new String(bytes));
   }
 
 }

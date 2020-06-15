@@ -12,7 +12,7 @@ public class DefaultEventCollector extends AbstractEventCollector {
 	@Override
 	public void onReceive(Object message) throws Exception {
 		if( message instanceof Event){
-			logger.info(((Event)message ).toText().replace( "\n",""));
+			logger.info(writer.writeValueAsString((Event)message ).replace( "\n",""));
 			numberOfEventsProcessed++;
 		}
 		if (numberOfEventsProcessed % 1000 == 0 ){

@@ -63,7 +63,7 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
         }else if( message instanceof Event) {
             try {
                 producer.send(new ProducerRecord<String, String>(topicName,
-                                                                 ((Event) message).toText().replace("\n", "")));
+                                                                 (writer.writeValueAsString ((Event) message)).replace("\n", "")));
                 numberOfEventsProcessed++;
                 if(numberOfEventsProcessed % maxLoggingRows == 0){
                     logger.info("Processed " + numberOfEventsProcessed + " events");

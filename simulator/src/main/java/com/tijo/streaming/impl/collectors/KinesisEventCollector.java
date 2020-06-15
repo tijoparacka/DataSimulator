@@ -142,7 +142,7 @@ public class KinesisEventCollector extends AbstractEventCollector
             try {
               f = producer.addUserRecord(streamName, Long.toString(System.nanoTime()),
                                          new BigInteger(128, RANDOM).toString(10),
-                                         ByteBuffer.wrap(((Event) message).toText().replace("\n", "").getBytes())
+                                         ByteBuffer.wrap((writer.writeValueAsString((Event) message)).replace("\n", "").getBytes())
               );
             }
             catch (JsonProcessingException e) {
