@@ -1,5 +1,7 @@
 package com.tijo.streaming.impl.domain;
 
+import com.tijo.streaming.impl.domain.generic.GenericEvent;
+
 public abstract class AbstractEventEmitter extends AbstractDomainObject {
 	private static final long serialVersionUID = 3553392748138862662L;
 
@@ -7,5 +9,5 @@ public abstract class AbstractEventEmitter extends AbstractDomainObject {
 
 	}
 
-	public abstract Event generateEvent() throws Exception;
+	public abstract GenericEvent[] generateEvent() throws Exception;
 }

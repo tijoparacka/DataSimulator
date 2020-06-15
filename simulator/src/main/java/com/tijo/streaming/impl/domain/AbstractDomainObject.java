@@ -23,8 +23,8 @@ public abstract class AbstractDomainObject extends UntypedActor implements Domai
 		return new ToStringBuilder(this).toString();
 	}
 
-	public String toText() throws JsonProcessingException
-	{
-		return DataSimulator.getWriter().writeValueAsString(this);
-	}
+//	public String toText() throws JsonProcessingException
+//	{
+//		return DataSimulator.getWriters().writeValueAsString(this);
+//	}
 }
