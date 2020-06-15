@@ -3,14 +3,13 @@ package com.tijo.streaming.impl.domain.generic;
 import akka.actor.ActorRef;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tijo.DataSimulator;
 import com.tijo.config.ConfigUtil;
 import com.tijo.streaming.util.Util;
 import com.tijo.streaming.impl.domain.AbstractEventEmitter;
 import com.tijo.streaming.impl.messages.EmitEvent;
 import org.apache.commons.math3.random.RandomDataGenerator;
 
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -24,9 +23,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 import bsh.Interpreter;
 
@@ -53,7 +50,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
   RandomDataGenerator rand = new RandomDataGenerator();
   Random randomUtil = new Random();
   ObjectMapper mapper = new ObjectMapper();
-  Class eventClass ;
+  Class[] eventClasses ;
   String dir ;
   long sleepTime = 0;
   Interpreter interpreter ;
@@ -70,7 +67,12 @@ public class GenericEventGenerator extends AbstractEventEmitter
       this.sleepTime = config.getConfig( "sim.generator.sleepTimeMilliSec") != null? Long.parseLong( config.getConfig( "sim.generator.sleepTimeMilliSec") ):0 ;
       ObjectMapper objectMapper = new ObjectMapper();
       this.metaDatas =objectMapper.readValue(metaDataJson, MetaData[].class);
-      this.eventClass= Class.forName(config.getConfig("sim.generic.eventClass"));
+      String[] eventClassName = config.getConfig("sim.generic.eventClass").split(",");
+      eventClasses = new Class[eventClassName.length];
+      for (int i = 0; i < eventClassName.length ; i++) {
+        eventClasses[i]= Class.forName(eventClassName[i]);
+      }
+
     }
     catch (IOException e) {
       e.printStackTrace();
@@ -130,7 +132,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
 
 
   @Override
-  public GenericEvent generateEvent() throws Exception
+  public GenericEvent[] generateEvent() throws Exception
   {
    sb.setLength(0);
     sb.append("{");
@@ -224,7 +226,11 @@ public class GenericEventGenerator extends AbstractEventEmitter
 
     logger.debug(sb.toString());
     try {
-      return (GenericEvent) mapper.readValue(sb.toString(), eventClass );
+      GenericEvent[] genericEvents = new GenericEvent[eventClasses.length];
+      for (int i = 0; i <eventClasses.length ; i++) {
+        genericEvents[i] = (GenericEvent) mapper.readValue(sb.toString(), eventClasses[i] );
+      }
+      return genericEvents;
     }
     catch (JsonProcessingException e) {
       e.printStackTrace();
@@ -236,14 +242,19 @@ public class GenericEventGenerator extends AbstractEventEmitter
   public void onReceive(Object message) throws Exception
   {
     if (message instanceof EmitEvent) {
-      ActorRef actor = this.context().system()
-                           .actorFor("akka://EventSimulator/user/eventCollector");
+      Class[] eventCollectorClass = DataSimulator.getEventCollectorClasses();
+      ActorRef[] actor = new ActorRef[eventCollectorClass.length];
+      for (int i = 0; i < eventCollectorClass.length ; i++) {
+        actor[i] = this.context().system()
+                             .actorFor("akka://EventSimulator/user/"+eventCollectorClass[i].getSimpleName());
+      }
 
       while (true) {
-        GenericEvent event = generateEvent();
-        actor.tell(event, this.getSelf());
+        GenericEvent[] event = generateEvent();
+        for (int i = 0; i <actor.length ; i++) {
+          actor[i].tell(event[i], this.getSelf());
+        }
         Thread.sleep(sleepTime);
-
       }
     }
   }
