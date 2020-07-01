@@ -54,7 +54,9 @@ public class FileEventCollector extends AbstractEventCollector{
 
   private Path getNewPath(int fileNameLength) throws Exception
   {
-    String fileName = Util.randomAlphaNumeric(10);
+    if (fileNameLength <=0 )
+      fileNameLength =10;
+    String fileName = Util.randomAlphaNumeric(fileNameLength);
     String path =outputPath + "/" + fileName ;
     File folder = new File(outputPath);
     folder.mkdirs();

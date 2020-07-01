@@ -138,7 +138,11 @@
 			<artifactId>postgresql</artifactId>
 			<version>42.2.14</version>
 		</dependency>
-
+		<dependency>
+		<groupId>rommel</groupId>
+		<artifactId>rommel</artifactId>
+		<version>1.0</version>
+		</dependency>
 		<!--
         <dependency>
           <groupId>org.apache.kafka</groupId>

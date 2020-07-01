@@ -12,7 +12,6 @@ public class Wikipedia1 extends GenericEvent {
     private String time = "";
     @JsonProperty("added")
     private Integer added = 0;
-
     @JsonProperty("channel")
     @JsonIgnore
     private String channel = "";
@@ -25,7 +24,6 @@ public class Wikipedia1 extends GenericEvent {
     @JsonProperty("commentLength")
     @JsonIgnore
     private Integer commentLength = 0;
-
     @JsonProperty("countryIsoCode")
     @JsonIgnore
     private String countryIsoCode = "";

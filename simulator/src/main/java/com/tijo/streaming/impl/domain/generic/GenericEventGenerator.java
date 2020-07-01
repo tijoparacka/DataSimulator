@@ -206,7 +206,11 @@ public class GenericEventGenerator extends AbstractEventEmitter
           sb.append('"').append(date).append('"');
           break;
         case DATE:
-          date = m.getDateFormatter().format(new Date(System.currentTimeMillis() - rand.nextLong(0, m.getLimit().longValue() )));
+          long limit =0;
+          if (m.getLimit() != null ){
+            limit =rand.nextLong(0, m.getLimit().longValue());
+          }
+          date = m.getDateFormatter().format(new Date(System.currentTimeMillis() - limit));
           val = date;
           sb.append('"').append(date).append('"');
           break;
