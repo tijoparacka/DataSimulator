@@ -1,0 +1,975 @@
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up bootstrap servers localhost:9092 and producing to topic demo
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+{"time":"2020-06-12 13:01:52","added":482,"channel":"O7COQ","cityName":"IPMDHX6VDAKTYFAB84IPZ7PQKZ6D7BC4N2GKOSWUIZHE75TSLZYP27Z0RR96REKZVW8X2XBOH2JDD2V96SAXEAMQ21HDQOXDHUO8","comment":"GGXBZF22D3GK4YEAS7M2XSWLM8ON32GFPOIC5BXKPKE29JTC77","commentLength":537,"countryIsoCode":"KE","countryName":"Kenya","deleted":250,"delta":534,"deltaBucket":728,"diffUrl":"","flags":"FEM8I","isAnonymous":"true","isMinor":"true","isNew":"true","isRobot":"true","isUnpatrolled":"false","namespace":"KenyaP912VYNFFXX4QWQ","page":"LC811J0K3PDI9LDH5CIDY9NO1V04TI5B4JLDMQX1M0Y94JZHDA5YNX2WJ8IY2SP7GWD0HAXXT9OK394CTMTBVB2L8IQ373MW9G96","regionIsoCode":"6O","regionName":"P912VYNFFXX4QWQ","user":"8DUR9J5KTFA9JMQVSKF7U1K7O1FTVOUGNRG5SUZPBBAZ3WFF1K","diff_Url":"NJLY0BS0Q8"}
+{"time":"2020-06-12 13:01:48","added":612,"channel":"9MP28","cityName":"WOLHW4RY99X0MMCYJY4YBG06OFONV42KA5YWK19LCDRF0ETYKB4OQQETQTZIVGTQ08H8H7NKQAHC8XATO1TRW6YL0FU9EVPJM0IL","comment":"0J7J4RXIE02FCX4BI4K1I1R749M6CO4B1D1N5DUWDFMZGLW7J7","commentLength":64,"countryIsoCode":"IR","countryName":"Iran","deleted":79,"delta":0,"deltaBucket":994,"diffUrl":"","flags":"RM25W","isAnonymous":"true","isMinor":"true","isNew":"false","isRobot":"false","isUnpatrolled":"true","namespace":"IranMFXFMLYFDP9ACP2","page":"TZCQ3AIDKJ0OW5D3129LISWAXVX74Q0VMGSXIZWVR0IU0VGA5QVHQ351ZVPQRFX4SGTEFSCROV33LBVPTXGUVQJA10MB0DZM7J6S","regionIsoCode":"A4","regionName":"MFXFMLYFDP9ACP2","user":"3OPB7753RAR0NYHI3NORQ0NTUIZFD02K3KDIJHVQYBS96OEIB5","diff_Url":"TKCAITFV8Y"}
+{"time":"2020-06-12 14:01:13","added":127,"channel":"N1TV7","cityName":"SVKVWV90XNOIBQUKAOZCYDR1FTP043RN7Q6BYWPE6FCWT30RG7NUMVMHC48P6GM374QRVGYAN92KS6F6X3K2OF5SXX20V37WL45D","comment":"3H9D2FR9GPL9GWLSCHMDBOXX6UR5MZ2AVBJT4QU0FS0AXHYLK1","commentLength":160,"countryIsoCode":"VN","countryName":"Vietnam","deleted":495,"delta":358,"deltaBucket":22,"diffUrl":"","flags":"1EGXX","isAnonymous":"false","isMinor":"false","isNew":"false","isRobot":"true","isUnpatrolled":"true","namespace":"VietnamEL7JF9M3NLZISF5","page":"7EZ1AEODWE9W2Q5MVX6B8HVGEFEN7JT8NWMWXYHHXFW7RTFEOE7XA11IO7YU34YPYN0OUXW4KQ0GVGQLRDDNCFN8O911GP68AY2J","regionIsoCode":"YS","regionName":"EL7JF9M3NLZISF5","user":"E8FCCP98MLU0XSAVRA4MAVZFO5362LEDN3ONWW4CG15TRTAUUH","diff_Url":"XJWHRINN7T"}
+{"time":"2020-06-12 14:01:19","added":686,"channel":"525KL","cityName":"3TFV2A744IL6JBAK321LOVQQIWCD6BEP0WFMQWVEXVN75CP2G3U3920BBXHTDOA6HF6N8HIXQAL5SJ2P9D49YOGT3270PS3IDXTZ","comment":"VNWZ676ZF5H27MFFOZV8YEMV5OA3YH7SOOOSW7641VLKUX4RXM","commentLength":397,"countryIsoCode":"KW","countryName":"Kuwait","deleted":718,"delta":849,"deltaBucket":216,"diffUrl":"","flags":"SH05O","isAnonymous":"false","isMinor":"true","isNew":"true","isRobot":"true","isUnpatrolled":"true","namespace":"KuwaitD7MDRRIJAUNYRX1","page":"JXP9ULHN744CFPHT9NYW28DQ41PIE0SJC9HV4B64ZPKO52KDV7MVBZDU5FWW9U8RDC8I9V0U2UXU7SDIKXLNUKL0GY42E9M1YFAW","regionIsoCode":"VC","regionName":"D7MDRRIJAUNYRX1","user":"NYEDTBITDH0BM057W14RCGZTKLNBFDVNYZ8CH3ZSOAO7DKJCM0","diff_Url":"749QAUZVEU"}
+{"time":"2020-06-12 14:01:23","added":337,"channel":"BXDOO","cityName":"P0E4QYXE7ZR5726RW3AE3NY4JEAZ0RC53IKY11KT1ZW4YTDAAEZ40CNH76KQALMXANJ94NP2WTLD4975MXMDIS3QAJ9985PZ58JX","comment":"REOT8KVBKCSUKHIDKWW5ANAPTYC4MNWX43A863QDIVTP12H7ME","commentLength":309,"countryIsoCode":"RS","countryName":"Serbia","deleted":54,"delta":710,"deltaBucket":327,"diffUrl":"","flags":"FHBKH","isAnonymous":"false","isMinor":"true","isNew":"true","isRobot":"true","isUnpatrolled":"false","namespace":"Serbia7COWM7J08VYFR4I","page":"IKG13WNVAFGTCFKS0T6PTTPE0Y9QU2MF4RFMMJ3EF9KSADAZYJJD2XUMX4YTD01NZIDACDEPKO1K93G2UPAFOUJ158LQLCTL2FGG","regionIsoCode":"Q0","regionName":"7COWM7J08VYFR4I","user":"ZDCYX4BG83XYB1S2SDUAH35D7G94E9BHD2KUKGQJ8TU9O7603K","diff_Url":"0Q3GYCGO1T"}
+{"time":"2020-06-12 14:01:33","added":487,"channel":"5TG6Q","cityName":"04MZ1OJ6B2SE62N5WZXM5L5B0OP1ME9LOSPSHNV34BIS779EY33X7870GAPXMDCO1LX0R4NSJADB4F03YNTOZ9I5DYMFT93RUM45","comment":"BI0VVM03FUZ8LYM3CRPSZ74IZTUIQ7335VSQ1DWDH4QH0B39NC","commentLength":348,"countryIsoCode":"UZ","countryName":"Uzbekistan","deleted":2,"delta":897,"deltaBucket":959,"diffUrl":"","flags":"Z8WC0","isAnonymous":"false","isMinor":"true","isNew":"false","isRobot":"true","isUnpatrolled":"false","namespace":"UzbekistanKRMX3AY1ACJ0YAT","page":"0017XC00P37PY30ITVZ6RRR8HFLPCT8DVXDZNXQC51WKR4L73IXG9Y7NQ8WPJTK9T95J1YSEGPRORIU7W7F051T6KLA0OLJLKU9C","regionIsoCode":"U1","regionName":"KRMX3AY1ACJ0YAT","user":"TOPHHH78RUXN70Y65UU4LUFCT1IXL496K0H0I7WSKSR6DURGU7","diff_Url":"LFQOSCMASV"}
+{"time":"2020-06-12 30:01:51","added":630,"channel":"0D07S","cityName":"QS5XB7OHRAQPOY7H869HLRT4HWH24OEDVDE0G8K8PH4KRK859BKWBT3V540PR3G7XASVWNFCIVFLWTNDG5L0BUW5HB3ODWAWWUY2","comment":"H73Q9EZ1ODXMS0IWDBVT182T7K14U5N3F3N92K5CXOBOFUSPZ9","commentLength":92,"countryIsoCode":"GE","countryName":"Georgia","deleted":621,"delta":578,"deltaBucket":237,"diffUrl":"","flags":"WD4ZF","isAnonymous":"false","isMinor":"false","isNew":"true","isRobot":"false","isUnpatrolled":"false","namespace":"GeorgiaT5J77DUJ0N2LGO1","page":"M4RHVOFST1VO827XTQG7RAPX6SHPIJVFIPVYWU6C3FE74ML56WQY341FW6XF76I69CG65U824U7EAPH0K1L8QI6EXBIPR094JUGA","regionIsoCode":"6O","regionName":"T5J77DUJ0N2LGO1","user":"NO09Y5PH5ZQ1MSUAEXMTH84Z1V299C08UYVXQF52BXLILRQIDO","diff_Url":"09OPDYU465"}
+{"time":"2020-06-12 30:01:42","added":459,"channel":"FEZ5U","cityName":"V1FAOTSQ9I2RV89K3ITOGB0SAOXJFPS1ZMXURTIXW34ZGS4UUWNU7UBFCPXOWQT66J0X2XZJ8KY36DZXVPUG3LRJXUXLSU1ZR3QW","comment":"07EM55F40G0P830Q1UI1KWOT07ZI1IXWF87NFLN5CVWSX7EP3V","commentLength":58,"countryIsoCode":"KE","countryName":"Kenya","deleted":260,"delta":334,"deltaBucket":737,"diffUrl":"","flags":"KQVN2","isAnonymous":"true","isMinor":"true","isNew":"false","isRobot":"false","isUnpatrolled":"true","namespace":"Kenya370BZQXAXNFMRO5","page":"84EYL6JUGG8PNCUFQW6QEMVF8LMVEPA1EC73AJ1XL7MLI1853YVE6CTZYJD1SFS3KCZVBWT9VWIA6FQV8ZK364RWVPSAZUJ2YXFE","regionIsoCode":"4H","regionName":"370BZQXAXNFMRO5","user":"OM5FZ9PM7JRNQNGOGJ6FEE33LC87KI6OXFZ8RUK1UHL1YAF9KC","diff_Url":"3L199O76WC"}
+{"time":"2020-06-12 30:01:51","added":342,"channel":"MQP1D","cityName":"1XJ3LH0EXHDIOXMOAD9VN3W10V0PQUJJUN7ZUGNTN7OANDQPSZXJQFHJ2K9GKG76GHHOGBSMBCAZDIO7ODSQEM4B5BT7HMQF8P2V","comment":"79US6A5OKZOEBNPTYKAO5QENIMM7W0X6BBTLDOTT5W10J8V0X5","commentLength":598,"countryIsoCode":"SK","countryName":"Slovak Republic","deleted":529,"delta":837,"deltaBucket":336,"diffUrl":"","flags":"LZ2RO","isAnonymous":"false","isMinor":"true","isNew":"true","isRobot":"false","isUnpatrolled":"true","namespace":"Slovak Republic1SYLRKBS034FYGN","page":"41N9JYAZV8ZSWAED03V0EKZXEH983W6LKXLF312LE7RTNT7RDPBYBDIZK9EGEEO5SWKN44IDUF27U3N25BF6OY038C3D0ZJ6SARG","regionIsoCode":"CC","regionName":"1SYLRKBS034FYGN","user":"K7IQEDE0KGYUDQF8UTOUCFYM8ORMLNJ4ZM3PDWTNVCYHNUV1G7","diff_Url":"4USCA9RWPN"}
+{"time":"2020-06-12 30:01:51","added":53,"channel":"KBREZ","cityName":"B7PQSLRX693BPICL8HXG4AXZKIM6UQH91LASJV5Q85DG2L3MFOE4JQCL34ACEFGPV9XL2X2MJD905ISZUQOX7D4HQZBBFZF49B65","comment":"A3HQHXZM6RGU1XGKJDSEG4JDAN4NU1609EKWV4ULLB46KNDGRD","commentLength":387,"countryIsoCode":"NG","countryName":"Nigeria","deleted":828,"delta":766,"deltaBucket":773,"diffUrl":"","flags":"1W9XY","isAnonymous":"false","isMinor":"true","isNew":"true","isRobot":"true","isUnpatrolled":"true","namespace":"NigeriaJ89GJDQ833YUMQN","page":"7J0OXILJO5C8MP05YKU0OUF9TVNNSM92OZTW10DS5MVEWSVOMCRYUQW5INSYTRBKP56Z0D0L5ZKWK7ERBUJFPUTM27MOVR81LPXL","regionIsoCode":"NZ","regionName":"J89GJDQ833YUMQN","user":"KAEAUOJZR2ZIAQV3B0LR5IGXY95HFH9YKV267D38W4ULXXC5H4","diff_Url":"CGITZY06T1"}
+{"time":"2020-06-12 30:01:46","added":767,"channel":"SYQBW","cityName":"0QX5RTBLFWT7JKP922H8QX1CRCRNJVY24PSSL4DJD1HIDQCN0DNPVVLX9RVEV2PO23X88KOYLOP4SPHUNNEE88WFUA91OJJKV22J","comment":"QWN403WDTAKD528A07NSJBQFFVR2OFRHNCXZOJDBC0OE0CC6BW","commentLength":723,"countryIsoCode":"BE","countryName":"Belgium","deleted":702,"delta":214,"deltaBucket":102,"diffUrl":"","flags":"73RBT","isAnonymous":"false","isMinor":"false","isNew":"false","isRobot":"false","isUnpatrolled":"false","namespace":"Belgium0WJ8LH0YLTZ6AO6","page":"KMGBZYS6M1EH22FHIVJWTDB75BDV91H2FCDY4YLFZDPKDDUL8B8UAXNUW2THIFVFPF3OIOTF9VY1LB8W8RVLB44ZO3MBLCE5DILW","regionIsoCode":"HK","regionName":"0WJ8LH0YLTZ6AO6","user":"FOVXCUS17TYK5K92DRULICJFN0STQU4UMLMDJLUXOI0IEE019B","diff_Url":"D6JLHORTA0"}
+Setting up output Folder :output with max rows in each file is 10000000
+{"time":"2020-06-12 23:02:43","added":653,"channel":"6UOWP","cityName":"J45PALEPIW1KTV620FP1K0LTJQIU83MLDATH6MGSRXBFU1AETA25VSSNYFGUWTAGZEQ1DQW5EDKN1APJDNA5RO2V8ODKCXM3Y6BT","comment":"AFKYCR6S9Z6K1AB6I2A28C2TD6ALM5HJV07J1YXHDKU3WCE5JU","commentLength":766,"countryIsoCode":"PA","countryName":"Panama","deleted":507,"delta":542,"deltaBucket":772,"diffUrl":"","flags":"0JNO8","isAnonymous":"false","isMinor":"true","isNew":"false","isRobot":"false","isUnpatrolled":"true","namespace":"Panama623WIMFPC69CFYY","page":"OCLPMEYKXLUMNN16MVRINFNY20EI1TDDPIGKC4HZ1L87B3X99ETTO9961DXMIEDS3Y52UYX4QOSP1XXMF0LHAA3WXJHEA7N6NHWA","regionIsoCode":"FB","regionName":"623WIMFPC69CFYY","user":"DTFSIHJ6NYWSKHHNHIUBZEMN2043ST5FTCZZ7C2I44M0Z9X21L","diff_Url":"CTCWLN93RD"}
+{"time":"2020-06-12 27:02:27","added":426,"channel":"CPEFJ","cityName":"WYOVDRHUCYMQY6CNY6927Z2CM64UQBE4VVHYXS3T1TW6SSKZSJ633YGQ6EXZOCT6AGLKL62LI5X7V7R3NBIRK842VUY4PHOMP6EL","comment":"FSRXOVT5EB5GT2X2W7Z3H205EXHG5HMJE1536UOZ8OZ1JMMR8R","commentLength":918,"countryIsoCode":"NG","countryName":"Nigeria","deleted":7,"delta":983,"deltaBucket":310,"diffUrl":"","flags":"ME027","isAnonymous":"false","isMinor":"true","isNew":"true","isRobot":"true","isUnpatrolled":"false","namespace":"NigeriaMQRQ03LTTF5FF75","page":"O2XW5Z8EDC0V1OYMJXVN8NMHE285UPMIHHL2I02HL6G3PHL85BC0571IP3FQZXHABFBXF7FBTZQOIEBJLQV156R2B0LS5I3O7Y3Z","regionIsoCode":"EO","regionName":"MQRQ03LTTF5FF75","user":"6OWE08Z2AY9DON27VXO8TD024YNEBIXEXIOQE6WOQHZZVO8XLF","diff_Url":"8I3IW51524"}
+{"time":"2020-06-12 27:02:31","added":518,"channel":"TNNJN","cityName":"ZB2QYZSW4K7LDJQTLO8UOGRGXX0H6P1WI1N0T5M8WGWARWRTUO7VYJ6FB5PCNSHTMH5R9LFN7DN14X2SGCRH2T9IF7UWSHGE7QKV","comment":"LETGUX9TJMOZ57OZCUBFDU22Z0KEY3N7ZPANFYMSPKWKZU34IU","commentLength":354,"countryIsoCode":"TN","countryName":"Tunisia","deleted":486,"delta":278,"deltaBucket":350,"diffUrl":"","flags":"BMFU9","isAnonymous":"false","isMinor":"false","isNew":"false","isRobot":"false","isUnpatrolled":"true","namespace":"TunisiaX1HN2GUPSGIATFX","page":"YWYOYE60VBBV2UPRT9FCF184KGNKM60IH6X6RGGI416RKN6OJRUGXI7KQCYU0KNIB91FQ2BRP7S1WQ0ZDLZGDHNBW28FFNKDJ9MU","regionIsoCode":"WX","regionName":"X1HN2GUPSGIATFX","user":"XC7URTXDV1566OPTTVG8Q790EYNMFKGW6N8SZ9YU2XW9CX75VI","diff_Url":"136TAG5YVZ"}
+{"time":"2020-06-12 27:02:34","added":196,"channel":"S4FLY","cityName":"O2RV69LR90MHU77RD6DJF3IR9YD6R82BOGWE0C2FEGA94E25N7YT9Q0U1AOXFON53YQ9MOJY53YNHBY8OXIEW2XP79FSR056PKUM","comment":"ZBJ3TWYGZOIBFTG6B59CVRWQ9Q6RP16Z6R9OC5ZIN6Z2QIEFA3","commentLength":909,"countryIsoCode":"KW","countryName":"Kuwait","deleted":508,"delta":579,"deltaBucket":94,"diffUrl":"","flags":"95KTY","isAnonymous":"false","isMinor":"false","isNew":"true","isRobot":"false","isUnpatrolled":"true","namespace":"KuwaitOGH8OWTBKEUJQNP","page":"M4KIXXGRMQ87KEIDA8GRDAD06XO190Z92XJYWRIZK5WCRPCA7CID4ZCQR3HFXW8GG09QK81QUAR90DKNACRBVWWE2LN23RCMX5K1","regionIsoCode":"DW","regionName":"OGH8OWTBKEUJQNP","user":"C5G5OP2SULD33LYQDGIRAM7TJLJ0CT8QZCVWNE83O798TNL4AH","diff_Url":"DQ393FQK0S"}
+{"time":"2020-06-12 27:02:28","added":661,"channel":"XOT0H","cityName":"VDDQ84ABHT391JOUUQSZ6IB0KDW9M04E4K0OD3EGMIL9PE0WI7H0KVIIA9WPESS09EYPUA9ZD7FU4N3Y7VARO3F4QSM2AOLCQNQ8","comment":"20Z4CA63FD0UY6D9NE0CTCXY2GS40Q8Y12YKQI9POV1ZH1TY1O","commentLength":488,"countryIsoCode":"TH","countryName":"Thailand","deleted":119,"delta":603,"deltaBucket":677,"diffUrl":"","flags":"UDMKU","isAnonymous":"true","isMinor":"true","isNew":"false","isRobot":"true","isUnpatrolled":"true","namespace":"ThailandNNI21PWPWD429ER","page":"WQPY25DRUX961VNBXPJUD8QDU32RTZZZCJ9M10VTF7Z9WKHT5IKUWGF11OY1YGOCMTYECAZN5C7B8DTTOVW5G6TLT7LRCNFYLOMB","regionIsoCode":"3Z","regionName":"NNI21PWPWD429ER","user":"ZG1J8XUDBZLR7BQDSSUPR7MJGRGVS6F0ICG3TQJP91LCVQ4EOT","diff_Url":"9TPS3YM1IC"}
+{"time":"2020-06-12 27:02:29","added":404,"channel":"UNSYT","cityName":"3UUJOM9Y8V669ORZ83S8MCAW93UAOWMQ4GBMK2GB9B7CNXT2TWIMKU3YZYPTLL66L2Q98Z5E8XDNUVEUKM6NN0BPTH0WLE9L7JQJ","comment":"0XM6N6W6YZ3JS3CGL70QV1MGH5FWPNRAI0P3NS6TBF6O4IJHDV","commentLength":771,"countryIsoCode":"CH","countryName":"Switzerland","deleted":250,"delta":475,"deltaBucket":51,"diffUrl":"","flags":"AVZQY","isAnonymous":"false","isMinor":"true","isNew":"true","isRobot":"false","isUnpatrolled":"false","namespace":"SwitzerlandCLZ7YXUVDF9SRJJ","page":"YIHHXKEQ24HQECCQW7I6G503Z4ATXOTQE6L1OLBTVFB47UF08BKAY5W2DTDWYK3B5E7SBA734YNKDT2UUKLFI0RP9UU8CLAG9X5E","regionIsoCode":"YX","regionName":"CLZ7YXUVDF9SRJJ","user":"W95J1M8K7KMHDLPY5GWQK0RY01MDIIIMH4TDRSOVQBV1LDMRZS","diff_Url":"IFLW2J12SC"}
+{"time":"2020-06-12 27:02:32","added":164,"channel":"CKUBK","cityName":"PWTLTDC74TJC1QT935WS5ZZR517HSDV21KIT96VUIVRXI3GPV9H9E71YHSLU5JYDQ32L5PRHGOZIZWO8RFMYMXHSVLQOK6HR81FN","comment":"EGQ7SGILUQFY4CG7NZ6X2WWDU2B9R7FKK3HWLTLI7HBOGX5307","commentLength":836,"countryIsoCode":"GE","countryName":"Georgia","deleted":712,"delta":518,"deltaBucket":589,"diffUrl":"","flags":"6CTH6","isAnonymous":"true","isMinor":"true","isNew":"false","isRobot":"false","isUnpatrolled":"false","namespace":"GeorgiaNGDZALWCRE5NVOE","page":"C8I1UMMFDUS7GK08A3ESXMFWUB5DFYVZWK7RAZXUGKCJBI15KD7BSPX3FWOF4QU9GHCQJVAOYRHTG7MNH1HGKHBTQW2MMBQMK9A2","regionIsoCode":"XT","regionName":"NGDZALWCRE5NVOE","user":"H1E7T2M73MMO2PT21PMS3XNBVNO4MOK10DRNDPX5097R3R1XER","diff_Url":"EIEXGPCHBC"}
+Setting up output Folder :output with max rows in each file is 10000000
+{"time":"2020-06-12 30:02:11","added":881,"channel":"WWTEP","cityName":"KOKXH2QIHHBI1FIDS7RRMJBHDQQQTDP0VHMKN8UNF3G4VJ1RKN9K175U5O7YEXDYPAMOG5VJNCZBGB03NS6D5XBDOYSEVD8RIVE8","comment":"2HREKI4ZN9CURCE1FW7WEAXB1BQYEUNPDHBK576EIKQCZOSZPI","commentLength":849,"countryIsoCode":"IT","countryName":"Italy","deleted":48,"delta":1,"deltaBucket":385,"diffUrl":"","flags":"KXGXH","isAnonymous":"true","isMinor":"true","isNew":"true","isRobot":"true","isUnpatrolled":"false","page":"VQ4IA4FOZG7Z56QBE3XW6S1SP8JPI7F1F9MX8B66SP67G131Y5FVE8DQ7NU47YQSDVY2X1IL3QTMC5PJSOBBPGC98LZQ8PSQSDGL","regionIsoCode":"9Y","regionName":"I2REDU5JTCKE4QP","user":"24LH531ID13GQ2G9W1QFLKO12AF053IPTAWT9L0008SH4WQIHC","namespace":"ItalyI2REDU5JTCKE4QP","diff_Url":"O7M2VN27CF"}
+{"time":"2020-06-12 30:02:09","added":59,"channel":"NJ5XM","cityName":"9B8BBYKPNYXH6BLPO7JKP8TSRAMOLJ3B6L7CR0X9MUZ0SEFN7HM9RMAP3Y09340ERW3OQFY0YJQBLKUQNSPWMKY8QSV8S6566SYB","comment":"LZNFZQWPIG0P5RAOTVEU8NTH4VP36X4PLUNLMDOQKWAXHT9UQQ","commentLength":829,"countryIsoCode":"AR","countryName":"Argentina","deleted":160,"delta":872,"deltaBucket":486,"diffUrl":"","flags":"4ZSQH","isAnonymous":"true","isMinor":"false","isNew":"true","isRobot":"false","isUnpatrolled":"false","page":"R4PKILYP6IVCLJWMBHVNT7I46OUO54WL13ZUT3DMDGUPYI3X6SPMLDB3MLR4SMMDZ2HJO7SIA4AARYADDLEHTY2EVTOKLRUXPWSB","regionIsoCode":"6O","regionName":"U7W50JYKWF20R4O","user":"BWLUEFHV86I1SJRUAN61W9YSWR2R2OVXGY7VQIOXLA4MDIERP8","namespace":"ArgentinaU7W50JYKWF20R4O","diff_Url":"JTTXA1HQP3"}
+{"time":"2020-06-12 30:02:17","added":65,"channel":"5DN6I","cityName":"16HHZMOLFWDNRUQU73TO6KS205LC6YAZWJC5PLTB3GDQGKLDT4SG1PUBJE69RSJMBQ7QDX58Q6DN4SCCPIZSE41OJBE2Q8BQDHE6","comment":"9GLX61KKHAYSBONEXI0O7OB7LXUA94897KA8A91MRXNCEDFHWD","commentLength":921,"countryIsoCode":"RU","countryName":"Russia","deleted":995,"delta":67,"deltaBucket":691,"diffUrl":"","flags":"UN5H0","isAnonymous":"true","isMinor":"true","isNew":"false","isRobot":"true","isUnpatrolled":"false","page":"HAJAD4WY6LP8AYCEMXHHRAPW55WSC0B952YA3BT9EHOJ0BGSNED1VONB9KTB8E8LAQOUPDOM0ZJM7U6SOQ5SN80X9YVOG0CRK9HN","regionIsoCode":"YM","regionName":"ETP2A3NSC9DEMY9","user":"X6XL86ZIK1V7LKVE9D3BKSDY6L8DWWLRTIRDFDWRTBQRV8ULHP","namespace":"RussiaETP2A3NSC9DEMY9","diff_Url":"6AUP2H7JZE"}
+{"time":"2020-06-12 30:02:10","added":365,"channel":"TRKTT","cityName":"G3R32WLXWL310FQWW6I2ZX8CF2OYQCWQ2BSWXWJDKYONSC8WL107NKFL96XM5HXQ9VD838B6RDRG7B2G922N25LDBUE6ATAJGNAC","comment":"T1QACTUDKFZCYJ4RW8XODV4PTQY8RZ1SBDX380MCN0FL1KBAJN","commentLength":321,"countryIsoCode":"UY","countryName":"Uruguay","deleted":758,"delta":903,"deltaBucket":508,"diffUrl":"","flags":"UV42N","isAnonymous":"true","isMinor":"true","isNew":"false","isRobot":"false","isUnpatrolled":"true","page":"PEJD1SB7R5FWHHPB67J17IIE9GC5K3OA4X629DFKKCT8AC2AQMIJX18VP00N9HRVJ6JPI2FYJCIGGI1RFFLCMNUI5Q5PV4DDCSRK","regionIsoCode":"TZ","regionName":"1MG4I8A3ZXZ195Q","user":"2CPHUARQCBI0C2APJK9MKXUQF5XWD3FXRUW2Z513WPCGIZU3XM","namespace":"Uruguay1MG4I8A3ZXZ195Q","diff_Url":"O1RXENIZ2R"}
+{"time":"2020-06-12 51:09:04","added":330,"channel":"WGNYC","cityName":"3RPWJ0Y8BAWG36X9K1WSC0PEMJCC6DYIV6WG83IF0PQCJH309J05NS9EOQ68XYREBBUN11X6JJSYXUPKLIR6M3LY7UMMJ0LEVBWL","comment":"HI55VD9FOOFD3RF5093VZR1O2QTQGWFL67YK1KTHX0MAEHLIUP","commentLength":391,"countryIsoCode":"LT","countryName":"Republic of Lithuania","deleted":270,"delta":722,"deltaBucket":63,"diffUrl":"","flags":"GKTSL","isAnonymous":"false","isMinor":"true","isNew":"false","isRobot":"false","isUnpatrolled":"false","page":"SBFEIC0D2PFR1DND6BO5HDY29MEU9GMKS003CX0YNFBT7TXQK14A3H901R731CTMS2SDXEONAZP2NV5789D12TS211Y3OCYS4WE0","regionIsoCode":"XI","regionName":"TPSY4AIBTN2VUON","user":"DIWSKQCWYY4K8446G1RPWN1IK3N6Q8WD1LEX160ZS92FHU8B2Q","namespace":"Republic of LithuaniaTPSY4AIBTN2VUON","diff_Url":"ONCG5L5JJS"}
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+828,H0VD5,"DXU64DZ01X5Q2O46GLRYHH07T9MBNH2DXNVLYGKR9MYNFE7WPERGF6EQQQO2P1Z66Q3UZFAL8RFTY1EAGN7J9TMWFWCFKJZ2KIOE","F1IDWLBS4OLV9KP1LTAC06UYKOLUPOA1H8DU0NN7MNH396ZDAG",891,DZ,Algeria,67,975,939,AB03TUEAEQ,PQXPR,false,false,true,true,true,AlgeriaRLD95K5GBOI3NH2,"VWIAVZRN42LTVC8XHZPDYUUVFU6AYZERVJKQZPJLY16PE5ETMXBF4N9G7IHT9TR0NCLS6B8E0XQLJI6RR8TA1OH1T3M7ZXNG3POY",NH,RLD95K5GBOI3NH2,"2020-06-15 14:13:27","FC0QY05TVR10IDX9DEIEFV67VJ4W7ULPJC07TAAL2T34J5P42Q"
+773,ODJ1P,"72KFPMJYUFB3S3LXAURL82CSE7BU3A4GFSR3Z2WN34U1U5VS1XD56TXMZMQ1YQF11PM8L0VSV8CM67BEQB8HTH1GKW3NCG8NMWHL","1F0THY644BIXW1DAD1B9UTYIRL4DFI4R6S1JLJZOOM6R9G4IYT",851,SG,Singapore,135,151,640,3JH7FSL8WM,0FA4I,false,false,true,true,true,Singapore4XKIIVK5O7NNXIJ,"S8PDI7NE0SJ1JUDSLJAK1CW0YRVKOH8PA4Q2CW98IIET5BCNNWVBIIIP9B2FQJI7LRJB9X63YI5TVB9R2SVP1757MLIOHTDUEC0J",HK,4XKIIVK5O7NNXIJ,"2020-06-15 17:13:10","RBR0I3LFKRL5UFCVE9N1AG3FEOYCRTU53VTGP2U7FEDTVWGM30"
+921,XEESP,"4O6XNQDV4CQE9QIICP5NN07UKTZYDPXTLPLJELEASFYGMS8ANCPFL3ZU8Y803GJ5ZH2G8C5EOZ9H5OI59MC50ML8HQ14DPLMLB3Z","NGXRTZKSZT1UGEGOX6VVHS86BJIVB5T2ZD4CV4SBNTMJVLJVYI",710,MN,Mongolia,646,467,440,YKYY8S99L9,329FI,false,false,false,false,false,MongoliaN4O4W1DL5IH4V34,"QWZMPFT3FR13IUA5J9A6P3HKBKU06XY51WDL2WF6UCA6G960PEG0B98FIILRFDTZBNZ60H94MV82BKXHRPYF7UIY63C5MR6CX0O4",UD,N4O4W1DL5IH4V34,"2020-06-15 17:13:14","HXR62PIQBMJA5RHOHJWJGQRYY4PVDLJD83QHXH1B915G3Y3GWQ"
+117,MQP1D,"OTY631NMMN84AZEUM72FZKYWEOU1HR2LV29OD1N696T0O9MLZZBYB2PIWOSHY3XSCQWKLCMHHKMF4NBFBNIPM9LP2CE5AIYM4LVJ","LWZL63F52I2FHUCYJDCRBH9AHIH65G2XOGDQZR6EL4FYGWHP1Z",899,SV,"El Salvador",182,154,427,TD7NHX5HRD,JUZJD,true,false,true,true,true,"El SalvadorC71AS1448CMZEFX","BX9BFFMD1TRRMFDLJ0UEVJ5UQY0L678NRZ862W1JJ4PYSLLXJ08U2N0G3OALSNJRLCMJJDBCO3BTKF6TGTC1TJL30S52EUJ21KT1",XC,C71AS1448CMZEFX,"2020-06-15 17:13:09","XEMGU4C6MAL9HV4VYY4I0IX7A2A8P16C008IQLD7RL71YZYW9R"
+136,5YDSX,"LR0X5CGF8H65UQUVO383H4UPM7W9ATT8HEUDSURIMT47X54LSGNO4CGE8H506BO88OT50YLS9Q6AT01AEFS5L3YW5K0P4P2TZ9A3","9CPP9AD6NVZK7G2573L50CO0L94F4MUOUYMNQ0LHMHMLCJ82SM",955,LU,Luxembourg,196,590,585,JZFDGY6L8V,I87K9,false,true,true,false,true,"Luxembourg2HAYMQPMZHCCDQ2","4T758APDHE9CXW9RTJ7FRAXZIQQDV30K37WAOR5RM8R92GMNCUZR1T04JJ8RBY2Z1X29E3JDUNU0LHMP00FA8BB5FC3H7QL6DH0O",B1,2HAYMQPMZHCCDQ2,"2020-06-15 17:13:15","7NBLWFRU6BUX91BMNVFDLIQSEGL8ZL0D2K9Y7NZ6C0BLWXAFY1"
+121,L3Z59,"C73HI44VYPWTKZ3NCBXYFX1QF4C3J1EZ3IEJWUHS3GBAIUG2MYTR0MH7OF0M4KVP5N4AERC348WDHLEST31Z4T0XG9W5ZC647LDI","3ITBZ28SKYX1KT1VS8G4QPK253JSBMR0Q3ZSXGI008VEHTS27N",587,IS,Iceland,39,931,656,UR8WUFUINL,J2L64,false,false,false,true,true,IcelandQA2QXAOOJ1V98MA,"L309SLP4L7RN1TWZY7O7UP2JWI21AY88FZH33UO0WYE2A0PVGF1ZMNHOHX6TTI9JCCW5SYBKK64GQ7FIHDXSW8JDGN18O91M5P9E",D8,QA2QXAOOJ1V98MA,"2020-06-15 17:13:08","T2QHX4Z4BHK9H8L2EZXBEQ90RPGTPGSFPG2CAX9MI0HMRVQYLO"
+135,5DN6I,"Z7AIN622P8W6XF8XF7KEKYG8WJJZTTP5HB6GZ6JS2DECX8IJLCVQWSDMO6WK29YES8ZN6PTN8EM2KVBIQ3AA9S9KWI3DJTQM0RI0","IW2RR9O4A5LE0W5K8DNMA4TQTRWPU2PLYLH4YOTQUDIIGHH07D",713,PR,"Puerto Rico",160,741,63,EYZ2T6XKTO,7T9ZA,true,false,true,true,false,"Puerto Rico6136AAJ41ZV6JFK","Y9JPYDHB4XH35VQ5VQC9WZEMBTE9111QKMXV7SBY7V21YPDYYQL0SYN6TOTELEWXV6E8EYVJ5S5MSL0CE0G62G3KYRHRTSR0KL75",7W,6136AAJ41ZV6JFK,"2020-06-15 17:13:16","BR6NKJSCCI4GHJ6I2PKOL7RKFPQVW1IMNP7DB8HCXY53UYTHTO"
+718,5YMIE,"AG07HOO1VDEH16ZL65D8KVX6KA64BI7Y2V20L785NY95QPZ7P3BISJ61NJH843HSPOFFZY6W0U7FM7F12M5ERLY60D8G5CPGZNKI","L9I390IGH4Z5C9C9IKOCBCYMVDNA6E515E5HO3UPKQPGP7BQC0",261,PR,"Puerto Rico",201,425,824,WU96PU3WP1,SBXRD,true,false,false,true,false,"Puerto RicoYYVVHC3VAHSWXZ1","ERY6WO4GSYUUX1H8SAWW9QS2L82C2EDBM1JVCFYGYSFHBGIV7258N80KE8GW0S3HQ1ZA0IFKBYKAWHD5DVD97HW81I4F9W8PB4OM",6L,YYVVHC3VAHSWXZ1,"2020-06-15 32:13:11","ZJER3N3YT89C4GKGBOWPRBV3WD0AILHQVMXKTQSB2V6PHV9HGO"
+486,DV3IQ,"6FOY3IKCVE3S75WET1922Z5XZZGMGD77IMNTQSFCPWMO1Z5QY66VOGXA1GGBPVSFMDH87CT4ZLW1QBQGU43BRWJABH9SHS0F45BW","EJHK2SDOED04GQZAC6IH1VDQV17E59PBAW2FAZ7P32Z4BEX2ZJ",25,DK,Denmark,210,385,246,KVV410VSVF,BI6S2,false,false,false,true,false,Denmark7Y0HB7KRO53XQ4C,"4J18BT51T2KKSKWZO6IMFLUO1BAYMKK8RTKO2G31R3B0J2X56VL1J3ZJME8HILC2F6T328PZFN9NTXLKXWTPSYRA1JOJ9WIJGQE5",TL,7Y0HB7KRO53XQ4C,"2020-06-15 32:13:12","NT1V84MRX3MEGI4YYISPMNM59E7FHMEIBBKPXHI2C9VVHTM23Z"
+117,KAHAP,"MTD5Y33Z3CHYK3QYJYWUDPEY1NPRRK9V1TH0Z1JUKXAP8BDCWVNN30RZ0BGVORM2WW79KKAPIJ177SA0J5COO23WIG1JWY430QP1","BSH47XRQNH3IUE6GS1XCBTTXJ8QFV98V0Z784L4BAHV63DTLKM",832,SA,"Saudi Arabia",562,963,726,QHE1F625HN,LXN8L,false,false,true,true,false,"Saudi ArabiaRE49IL0WVSDC18C","9LOPOR9PWFL086MIVCVMBJLKAY73IA69ONZ1IIBPYHQYQOANM3KHV27K6A0LN10D85U5GWUJZUCXBELTF4JJ7GKPS46YTT5GGQKG",WL,RE49IL0WVSDC18C,"2020-06-15 32:13:15","XMGA1FISSHWOUK9QLDHAPHDMRDW1CF9S4DABTVDVKLLWNDZCUT"
+244,5DN6I,"N73POW8N40T9FLIEELONNVOVQRMTK0D4PS2MUMLH4HP6R5SVAG6C9LHHNVEICY6GYT8TO72Q4SBJ31Q2MRZEELAOUREO43W73TJW","L76WLVQWXUUZI1E64I5E676NW51WKM3W98NQDW7XZZGMTC31KZ",991,TN,Tunisia,869,132,529,FY83RWQLKM,7J1B7,true,true,true,false,true,TunisiaYC8C2ZI1PGAWYW7,"HT631SE028RHKU699ET1T9MUQ3RHEB7OUX7K6SJ63SW2YI9GX49U0733YUF7FZB9L21FNKMUJCQRKE89M7WSSJT0TSF5AT9NUSR9",QK,YC8C2ZI1PGAWYW7,"2020-06-15 32:13:15","DVNLP5N0NAJKSSXAYCJUL5H0EKJUGEW3TQ8V0NYNWG6L0LPL5C"
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+964,"2020-06-15 24:14:31"
+423,"2020-06-15 24:14:29"
+886,"2020-06-15 24:14:39"
+450,"2020-06-15 24:14:51"
+207,"2020-06-15 24:14:54"
+493,"2020-06-15 24:14:47"
+498,"2020-06-15 26:14:50"
+537,"2020-06-15 26:14:50"
+825,"2020-06-15 26:14:50"
+818,"2020-06-15 26:14:57"
+986,"2020-06-15 26:14:49"
+Setting up output Folder :output with max rows in each file is 10000000
+The url cannot be null
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+The url cannot be null
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+No suitable driver found for jdbc:mysql://localhost:3306/test
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/test
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+No suitable driver found for jdbc:postgres://localhost:3306/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:3306/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.dungeon.FaultHandling$class.finishRecreate(FaultHandling.scala:225)
+	at akka.actor.dungeon.FaultHandling$class.faultRecreate(FaultHandling.scala:75)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:338)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:428)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+No suitable driver found for jdbc:postgres://localhost:5432/postgres
+java.sql.SQLException: No suitable driver found for jdbc:postgres://localhost:5432/postgres
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+Unrecognized field "table" (class com.tijo.streaming.impl.domain.generic.DBTableConfig), not marked as ignorable (one known property: "indexes"])
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 12] (through reference chain: java.lang.Object[][0]->com.tijo.streaming.impl.domain.generic.DBTableConfig["table"])
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "table" (class com.tijo.streaming.impl.domain.generic.DBTableConfig), not marked as ignorable (one known property: "indexes"])
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 12] (through reference chain: java.lang.Object[][0]->com.tijo.streaming.impl.domain.generic.DBTableConfig["table"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:195)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 10000000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Unrecognized field "table" (class com.tijo.streaming.impl.domain.generic.DBTableConfig), not marked as ignorable (one known property: "indexes"])
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 12] (through reference chain: java.lang.Object[][0]->com.tijo.streaming.impl.domain.generic.DBTableConfig["table"])
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "table" (class com.tijo.streaming.impl.domain.generic.DBTableConfig), not marked as ignorable (one known property: "indexes"])
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 12] (through reference chain: java.lang.Object[][0]->com.tijo.streaming.impl.domain.generic.DBTableConfig["table"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:195)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+Unrecognized field "columns" (class com.tijo.streaming.impl.domain.generic.DBTableConfig), not marked as ignorable (3 known properties: "indexes", "table", "column"])
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 31] (through reference chain: java.lang.Object[][0]->com.tijo.streaming.impl.domain.generic.DBTableConfig["columns"])
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "columns" (class com.tijo.streaming.impl.domain.generic.DBTableConfig), not marked as ignorable (3 known properties: "indexes", "table", "column"])
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 31] (through reference chain: java.lang.Object[][0]->com.tijo.streaming.impl.domain.generic.DBTableConfig["columns"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1206)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:195)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 84] (through reference chain: java.lang.Object[][1])
+com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 84] (through reference chain: java.lang.Object[][1])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:394)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:365)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:206)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"] , "indexes":[1,2]}, {"table":"Test2", "columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 94]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipColon2(ReaderBasedJsonParser.java:2221)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipColon(ReaderBasedJsonParser.java:2200)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextFieldName(ReaderBasedJsonParser.java:936)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:295)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:195)
+	... 22 more
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Cannot deserialize instance of `com.tijo.streaming.impl.domain.generic.DBTableConfig` out of START_ARRAY token
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"],"indexes":[1,2]},{"table":"Test2","columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.tijo.streaming.impl.domain.generic.DBTableConfig` out of START_ARRAY token
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"],"indexes":[1,2]},{"table":"Test2","columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1442)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1216)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1168)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1460)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:161)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:43)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"],"indexes":[1,2]},{"table":"Test2","columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 80] (through reference chain: java.lang.Object[][1])
+com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"],"indexes":[1,2]},{"table":"Test2","columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 80] (through reference chain: java.lang.Object[][1])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:394)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:365)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:206)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"],"indexes":[1,2]},{"table":"Test2","columns"=["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 90]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipColon2(ReaderBasedJsonParser.java:2221)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipColon(ReaderBasedJsonParser.java:2200)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextFieldName(ReaderBasedJsonParser.java:936)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:295)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:195)
+	... 22 more
+Setting up output Folder :output with max rows in each file is 200000
+Cannot deserialize instance of `com.tijo.streaming.impl.domain.generic.DBTableConfig` out of START_ARRAY token
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"],"indexes":[1,2]},{"table":"Test2","columns":["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 1]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.tijo.streaming.impl.domain.generic.DBTableConfig` out of START_ARRAY token
+ at [Source: (String)"[{"table":"Test1", "columns":["Col1","Col2"],"indexes":[1,2]},{"table":"Test2","columns":["Col1","Col2"],"indexes":[1,2]}]"; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1442)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1216)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1168)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1460)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:161)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:43)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+
+java.lang.NullPointerException
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:50)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+
+java.lang.NullPointerException
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:50)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+
+java.lang.NullPointerException
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:50)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Unexpected character ('T' (code 84)): was expecting comma to separate Object entries
+ at [Source: (String)"[{"table":""Test1"", "columns":[""Col1"",""Col2""],"indexes":[1,2]},{"table":""Test2"","columns":[""Col1"",""Col2""],"indexes":[1,2]}]"; line: 1, column: 11] (through reference chain: java.lang.Object[][0])
+com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('T' (code 84)): was expecting comma to separate Object entries
+ at [Source: (String)"[{"table":""Test1"", "columns":[""Col1"",""Col2""],"indexes":[1,2]},{"table":""Test2"","columns":[""Col1"",""Col2""],"indexes":[1,2]}]"; line: 1, column: 11] (through reference chain: java.lang.Object[][0])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:394)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:365)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:206)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3173)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:42)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('T' (code 84)): was expecting comma to separate Object entries
+ at [Source: (String)"[{"table":""Test1"", "columns":[""Col1"",""Col2""],"indexes":[1,2]},{"table":""Test2"","columns":[""Col1"",""Col2""],"indexes":[1,2]}]"; line: 1, column: 14]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComma(ReaderBasedJsonParser.java:2294)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextFieldName(ReaderBasedJsonParser.java:918)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:295)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:195)
+	... 22 more
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+The connection attempt failed.
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:297)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:48)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:161)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:128)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:113)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:73)
+	at org.postgresql.core.PGStream.receiveChar(PGStream.java:370)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.enableSSL(ConnectionFactoryImpl.java:416)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
+	... 24 more
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+The connection attempt failed.
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:297)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:217)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:48)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:161)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:128)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:113)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:73)
+	at org.postgresql.core.PGStream.receiveChar(PGStream.java:370)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.enableSSL(ConnectionFactoryImpl.java:416)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
+	... 24 more
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+
+java.lang.NullPointerException
+	at com.tijo.streaming.impl.collectors.DatabaseEventCollector.<init>(DatabaseEventCollector.java:54)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:65)
+	at akka.actor.Props.newActor(Props.scala:330)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:534)
+	at akka.actor.ActorCell.create(ActorCell.scala:560)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:425)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:447)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:262)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:218)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
+Setting up output Folder :output with max rows in each file is 200000
