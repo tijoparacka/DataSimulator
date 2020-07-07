@@ -815,7 +815,6 @@ public class Wikipedia extends GenericEvent {
      *
      */
     @JsonProperty("namespace")
-    @JsonIgnore
     public String getNamespace() {
         return namespace;
     }
@@ -828,7 +827,7 @@ public class Wikipedia extends GenericEvent {
      *
      */
     @JsonProperty("namespace")
-    @JsonIgnore
+
     public void setNamespace(String namespace) {
         this.namespace = namespace;
     }
