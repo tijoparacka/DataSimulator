@@ -207,7 +207,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
           break;
         case DATE:
           long limit =0;
-          if (m.getLimit() != null ){
+          if (m.getLimit() != null  || m.getLimit().intValue()!= 0  ){
             limit =rand.nextLong(0, m.getLimit().longValue());
           }
           date = m.getDateFormatter().format(new Date(System.currentTimeMillis() - limit));
