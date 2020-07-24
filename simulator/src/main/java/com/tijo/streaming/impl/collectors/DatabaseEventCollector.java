@@ -53,9 +53,9 @@ public class DatabaseEventCollector extends AbstractEventCollector {
                String sql = createInsertSQL(tables[i]);
                statements[i] =con.prepareStatement(sql) ;
             }
-        } catch (Exception e) {
+        } catch (Throwable e) {
             e.printStackTrace();
-            logger.error(e.getMessage(), e);
+            logger.info(e.getMessage(), e);
             System.exit(0);
         }
     }
