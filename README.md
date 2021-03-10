@@ -64,7 +64,7 @@ Config Properties
  |`INT`| Used for creating random integer value | 1. "limit" : Max value of the Integer to be generated. This should not be more than Integer.MAX_VALUE.|
  |`LONG`| Used for creating random Long value | 1. "limit" : Max value of the Long to be generated. This should not be more than Long.MAX_VALUE.|
  |`DOUBLE`|  Used for creating random Double value | 1. "limit" : Max value of the Double  to be generated. This should not be more than Double.MAX_VALUE.|
- |`DATE_RANGE`| Used to generate date from a start time  to end time .|1. "start" : start time  considering for simulation,   2. "end": end time in date format mentioned . eg : {"dimension" : "start_time" ,"type":"DATE","start":"2010-06-01 00:00:00","end":"2020-06-01 00:00:00","limit":10000,"format":"yyyy-MM-dd mm:HH:ss"}|
+ |`DATE_RANGE`| Used to generate date from a start time  to end time .|1. "start" : start time  considering for simulation,   2. "end": end time in date format mentioned . eg : {"dimension" : "start_time" ,"type":"DATE_RANGE","start":"2010-06-01 00:00:00","end":"2020-06-01 00:00:00","limit":10000,"format":"yyyy-MM-dd mm:HH:ss"}|
  |`DATE`| Generate the current time at which the simulation happens.| With the option limit you can give a variance to simulate the late arrival of data|
  
   
