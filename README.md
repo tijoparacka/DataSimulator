@@ -66,6 +66,8 @@ Config Properties
  |`DOUBLE`|  Used for creating random Double value | 1. "limit" : Max value of the Double  to be generated. This should not be more than Double.MAX_VALUE.|
  |`DATE_RANGE`| Used to generate date from a start time  to end time .|1. "start" : start time  considering for simulation,   2. "end": end time in date format mentioned . eg : {"dimension" : "start_time" ,"type":"DATE_RANGE","start":"2010-06-01 00:00:00","end":"2020-06-01 00:00:00","limit":10000,"format":"yyyy-MM-dd mm:HH:ss"}|
  |`DATE`| Generate the current time at which the simulation happens.| With the option limit you can give a variance to simulate the late arrival of data|
+ |`SCRIPT`|Make use of Beanshell where java code can be written . The value inthe variable `data` is returned by the simulator | eg : "script": `"import javax.xml.bind.DatatypeConverter; byte[] myBytes = row.get(\\\"deviceid\\\").getBytes(\\\"UTF-8\\\"); data=DatatypeConverter.printHexBinary(myBytes).substring(1,6);"}`|
+ |`LOOKUP`| Can be used to lookup in a file, based on a referenced dimension . The referenced dimesion should be defined before the lookup dimension |eg : `{"dimension" : "country" ,"type":"LOOKUP","file":"lookupfile.csv","referenceDim":"city"}`|
  
   
  Please refer the example configs to write a your own metadata.
