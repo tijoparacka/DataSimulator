@@ -39,7 +39,6 @@
               </goals>
               <configuration>
                 <finalName>data-simulator-${project.version}</finalName>
-                <!--tarLongFileMode>posix</tarLongFileMode-->
                 <descriptor>src/assembly/assembly.xml</descriptor>
               </configuration>
             </execution>
@@ -47,5 +46,6 @@
         </plugin>
       </plugins>
 
-  </build>
+	  </build>
+
 </project>
