@@ -60,7 +60,7 @@ public class DataSimulator
 				final int numberOfEventEmitters = Integer.parseInt(args[1]);
 				numberOfEvents = Integer.parseInt(args[2]);
 
-				final Class[] eventEmitterClasses = getClassObj(args[3]);
+				final Class eventEmitterClasses = Class.forName(args[3]);
 				eventCollectorClasses = getClassObj(args[4]);
 
 				//eventClass =
@@ -101,7 +101,8 @@ public class DataSimulator
 							public UntypedActor create() {
 								return new SimulationMaster(
 										numberOfEventEmitters,
-										eventEmitterClasses[0], listener);
+										eventEmitterClasses,
+										listener);
 							}
 						}), "master");
 				Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {

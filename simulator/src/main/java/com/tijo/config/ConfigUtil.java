@@ -29,6 +29,9 @@ public class ConfigUtil
   {
     return config.get(propertyKey);
   }
+  public Map<String,String> getConfigProperties(){
+    return config;
+  }
 
   private ConfigUtil() throws IOException
   {
