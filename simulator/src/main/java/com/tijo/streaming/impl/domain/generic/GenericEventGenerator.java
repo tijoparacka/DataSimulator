@@ -43,7 +43,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
   public static final String SCRIPT = "SCRIPT";
   public static final String LOOKUP = "LOOKUP";
 
-
+  StringBuilder sb = new StringBuilder();
   ConfigUtil config;
   String[] filePaths;
   MetaData[] metaDatas;
@@ -54,7 +54,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
   Class[] eventClasses ;
   String dir ;
   protected long sleepTime = 0;
-  Interpreter interpreter ;
+  Interpreter interpreter = new Interpreter();
   private GenericEventGenerator() throws Exception
   {
     this(null);
@@ -81,7 +81,6 @@ public class GenericEventGenerator extends AbstractEventEmitter
   @Override
   public GenericEvent[] generateEvent() throws Exception
   {
-    StringBuilder sb = new StringBuilder();
     sb.setLength(0);
     sb.append("{");
     Hashtable<String,String> row = new Hashtable<String,String>();
@@ -205,7 +204,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
 
   protected void initGenerator() throws Exception
   {
-    interpreter = new Interpreter();
+
     try {
 
       config = ConfigUtil.getInstance();
