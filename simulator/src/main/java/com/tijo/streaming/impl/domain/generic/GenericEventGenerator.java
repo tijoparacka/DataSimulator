@@ -10,6 +10,7 @@ import com.tijo.streaming.impl.domain.AbstractEventEmitter;
 import com.tijo.streaming.impl.messages.EmitEvent;
 import org.apache.commons.math3.random.RandomDataGenerator;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -42,7 +43,7 @@ public class GenericEventGenerator extends AbstractEventEmitter
   public static final String SCRIPT = "SCRIPT";
   public static final String LOOKUP = "LOOKUP";
 
-  StringBuilder sb = new StringBuilder();
+
   ConfigUtil config;
   String[] filePaths;
   MetaData[] metaDatas;
@@ -52,71 +53,17 @@ public class GenericEventGenerator extends AbstractEventEmitter
   ObjectMapper mapper = new ObjectMapper();
   Class[] eventClasses ;
   String dir ;
-  long sleepTime = 0;
+  protected long sleepTime = 0;
   Interpreter interpreter ;
-  public GenericEventGenerator() throws Exception
+  private GenericEventGenerator() throws Exception
+  {
+    this(null);
+  }
+
+  public GenericEventGenerator(MetaData[] metaDatas) throws Exception
   {
 
-    interpreter = new Interpreter();
-    try {
 
-      config = ConfigUtil.getInstance();
-      //String dimFiles = config.getConfig("sim.generic.dimension.files");
-      String metaDataJson=config.getConfig("sim.generic.metadata");
-      this.dir=config.getConfig( "sim.cardinality.generator.folder");
-      this.sleepTime = config.getConfig( "sim.generator.sleepTimeMilliSec") != null? Long.parseLong( config.getConfig( "sim.generator.sleepTimeMilliSec") ):0 ;
-      ObjectMapper objectMapper = new ObjectMapper();
-      this.metaDatas =objectMapper.readValue(metaDataJson, MetaData[].class);
-      String[] eventClassName = config.getConfig("sim.generic.eventClass").split(",");
-      eventClasses = new Class[eventClassName.length];
-      for (int i = 0; i < eventClassName.length ; i++) {
-        eventClasses[i]= Class.forName(eventClassName[i]);
-      }
-
-    }
-    catch (IOException e) {
-      e.printStackTrace();
-      throw new Exception("ioooooo poneeee.....");
-    }
-
-    SimpleDateFormat sf =null;
-    for (MetaData metaData : metaDatas) {
-      try {
-        switch (metaData.getType()) {
-          case FIXED :
-            List<String> dimData = new ArrayList<>(Files.readAllLines(Paths.get(dir+"/"+metaData.getFile()), StandardCharsets.UTF_8));
-            dim.put(metaData.getDimension(), dimData);
-            break;
-          case LOOKUP:
-            dimData = new ArrayList<>(Files.readAllLines(Paths.get(dir+"/"+metaData.getFile()), StandardCharsets.UTF_8));
-            Map<String,String > map = convert2Map(dimData);
-            dim.put(metaData.getDimension(),map);
-            break;
-          case DATE:
-            if(metaData.getFormat() != null ){
-              sf = new SimpleDateFormat(metaData.getFormat());
-              metaData.setDateFormatter(sf);
-            }else{
-              throw new Exception (" Please specify a Java Date format");
-            }
-            break;
-          case DATE_RANGE :
-            if(metaData.getFormat() != null ){
-              sf = new SimpleDateFormat(metaData.getFormat());
-              metaData.setLongStart(sf.parse(metaData.getStart()).getTime());
-              metaData.setLongEnd(sf.parse(metaData.getEnd()).getTime());
-              metaData.setDateFormatter(sf);
-            }else{
-              throw new Exception (" Please specify a Java Date format");
-            }
-            break;
-        }
-
-      }
-      catch (IOException e) {
-        e.printStackTrace();
-      }
-    }
   }
 
   private Map<String,String> convert2Map(List<String> dimData)
@@ -134,7 +81,8 @@ public class GenericEventGenerator extends AbstractEventEmitter
   @Override
   public GenericEvent[] generateEvent() throws Exception
   {
-   sb.setLength(0);
+    StringBuilder sb = new StringBuilder();
+    sb.setLength(0);
     sb.append("{");
     Hashtable<String,String> row = new Hashtable<String,String>();
 
@@ -148,12 +96,19 @@ public class GenericEventGenerator extends AbstractEventEmitter
       switch (m.getType()) {
         case FIXED :
           int size = ((ArrayList)dim.get(m.getDimension())).size();
+          if (0==size ){
+            logger.error(String.format(" Cardinality file for dimension %s is empty in file %s.",m.getDimension(),m.getFile() ));
+            System.exit(1);
+          }
           int index = randomUtil.nextInt(size);
           val =  (String) ((ArrayList) dim.get(m.getDimension())).get(index);
           sb.append("\"").append(val).append("\"");
           break;
         case LOOKUP:
           HashMap<String,String> lookup = (HashMap<String, String>) dim.get(m.getDimension());
+          if (lookup == null){
+            throw new Exception("No value found for the lookup "+m.getDimension());
+          }
           val = lookup.get(row.get(m.getReferenceDim()));
           if(val == null)
             val="";
@@ -229,10 +184,15 @@ public class GenericEventGenerator extends AbstractEventEmitter
     sb.append("}");
 
     logger.debug(sb.toString());
+    return getGenericEvents(sb.toString());
+  }
+
+  protected GenericEvent[] getGenericEvents(String eventString) throws Exception
+  {
     try {
       GenericEvent[] genericEvents = new GenericEvent[eventClasses.length];
       for (int i = 0; i <eventClasses.length ; i++) {
-        genericEvents[i] = (GenericEvent) mapper.readValue(sb.toString(), eventClasses[i] );
+        genericEvents[i] = (GenericEvent) mapper.readValue(eventString, eventClasses[i] );
       }
       return genericEvents;
     }
@@ -242,15 +202,99 @@ public class GenericEventGenerator extends AbstractEventEmitter
     }
   }
 
+
+  protected void initGenerator() throws Exception
+  {
+    interpreter = new Interpreter();
+    try {
+
+      config = ConfigUtil.getInstance();
+      //String dimFiles = config.getConfig("sim.generic.dimension.files");
+
+
+      this.dir = config.getConfig("sim.cardinality.generator.folder");
+      this.sleepTime = config.getConfig("sim.generator.sleepTimeMilliSec") != null ? Long.parseLong(config.getConfig(
+          "sim.generator.sleepTimeMilliSec")) : 0;
+      if (null == metaDatas) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        String metaDataJson = config.getConfig("sim.generic.metadata");
+        this.metaDatas = objectMapper.readValue(metaDataJson, MetaData[].class);
+      } else{
+        this.metaDatas = metaDatas;
+      }
+      String[] eventClassName = config.getConfig("sim.generic.eventClass").split(",");
+      eventClasses = new Class[eventClassName.length];
+      for (int i = 0; i < eventClassName.length ; i++) {
+        eventClasses[i]= Class.forName(eventClassName[i]);
+      }
+
+    }
+    catch (IOException e) {
+      e.printStackTrace();
+      throw new Exception("ioooooo poneeee.....");
+    }
+
+    SimpleDateFormat sf =null;
+    for (MetaData metaData : metaDatas) {
+      try {
+        switch (metaData.getType()) {
+          case FIXED :
+
+            File f = new File (dir + "/" + metaData.getFile());
+            if (!f.exists()) {
+              logger.error(String.format(
+                  " Cardinality file for dimension \"%s\" is not defined in file - %s. Alternatively you could generate cardinality by running bin/genCardinality.sh  <config file>",
+                  metaData.getDimension(),
+                  metaData.getFile()));
+              System.exit(1);
+            }
+            List<String> dimData = new ArrayList<>(Files.readAllLines(Paths.get(f.getAbsolutePath()), StandardCharsets.UTF_8));
+            dim.put(metaData.getDimension(), dimData);
+            break;
+          case LOOKUP:
+            dimData = new ArrayList<>(Files.readAllLines(Paths.get(dir+"/"+metaData.getFile()), StandardCharsets.UTF_8));
+            Map<String,String > map = convert2Map(dimData);
+            dim.put(metaData.getDimension(),map);
+            break;
+          case DATE:
+            if(metaData.getFormat() != null ){
+              sf = new SimpleDateFormat(metaData.getFormat());
+              metaData.setDateFormatter(sf);
+            }else{
+              throw new Exception (" Please specify a Java Date format");
+            }
+            break;
+          case DATE_RANGE :
+            if(metaData.getFormat() != null ){
+              sf = new SimpleDateFormat(metaData.getFormat());
+              metaData.setLongStart(sf.parse(metaData.getStart()).getTime());
+              metaData.setLongEnd(sf.parse(metaData.getEnd()).getTime());
+              metaData.setDateFormatter(sf);
+            }else{
+              throw new Exception (" Please specify a Java Date format");
+            }
+            break;
+        }
+
+      }
+      catch (IOException e) {
+        e.printStackTrace();
+      }
+    }
+  }
+
+
   @Override
   public void onReceive(Object message) throws Exception
   {
+    initGenerator();
+
     if (message instanceof EmitEvent) {
       Class[] eventCollectorClass = DataSimulator.getEventCollectorClasses();
       ActorRef[] actor = new ActorRef[eventCollectorClass.length];
       for (int i = 0; i < eventCollectorClass.length ; i++) {
         actor[i] = this.context().system()
-                             .actorFor("akka://EventSimulator/user/"+eventCollectorClass[i].getSimpleName());
+                       .actorFor("akka://EventSimulator/user/"+eventCollectorClass[i].getSimpleName());
       }
 
       while (true) {
@@ -262,4 +306,5 @@ public class GenericEventGenerator extends AbstractEventEmitter
       }
     }
   }
+
 }
