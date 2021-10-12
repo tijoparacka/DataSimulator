@@ -2,6 +2,7 @@
 bin_dir=`dirname $0`
 #jarpath = `$bin_dir/../lib/simulator-1.1.0-SNAPSHOT-jar-with-dependencies.jar`
 jarpath=".:$bin_dir/../lib/"
+confpath=".:$bin_dir/../conf/"
 for file in $bin_dir/../lib/*
 do
   jarpath=$jarpath:$file
@@ -12,7 +13,8 @@ java -server -Xmx2048m \
 -XX:+HeapDumpOnOutOfMemoryError \
 -XX:+ExitOnOutOfMemoryError \
 -XX:+PrintGC \
--XX:HeapDumpPath=/tmp/druid-heap.hprof -cp "$jarpath" com.tijo.DataSimulator $bin_dir/../ "$@" 2>$1 &
+-Xloggc:gc.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=2M \
+-XX:HeapDumpPath=/tmp/druid-heap.hprof -cp "$confpath/log4j.properties":""$jarpath" com.tijo.DataSimulator $bin_dir/../ "$@" 2>$1 &
 _pid=$!
 echo "$_pid" > $bin_dir/../app.pid
 

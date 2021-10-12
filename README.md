@@ -37,6 +37,20 @@ Generic simulator have the capbility to
 See the below section to to get more details on how to configure the metadata to generate the required cardinality 
 3. Generate the data based on the data type and condition required. 
 
+Running the simulator in multiple machine (Cluster deploy and run)
+
+Install the simulator in all the nodes 
+ansible-playbook  -u ec2-user --private-key ~/Documents/tt_support_NV.pem install.yaml 
+
+start simulator in all nodes
+ansible-playbook  -u ec2-user --private-key ~/Documents/tt_NV.key ops.yaml --tags "start"
+Stop the simulator in all nodes 
+ansible-playbook  -u ec2-user --private-key ~/Documents/tt_NV.key ops.yaml --tags "stop"
+Restart simulator in all nodes 
+ansible-playbook  -u ec2-user --private-key ~/Documents/tt_NV.key ops.yaml --tags "start,stop"
+
+
+
 Config Properties
 -----------------
  
