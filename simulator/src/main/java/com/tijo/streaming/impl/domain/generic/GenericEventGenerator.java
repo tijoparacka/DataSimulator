@@ -204,12 +204,9 @@ public class GenericEventGenerator extends AbstractEventEmitter
 
   protected void initGenerator() throws Exception
   {
-
     try {
-
       config = ConfigUtil.getInstance();
       //String dimFiles = config.getConfig("sim.generic.dimension.files");
-
 
       this.dir = config.getConfig("sim.cardinality.generator.folder");
       this.sleepTime = config.getConfig("sim.generator.sleepTimeMilliSec") != null ? Long.parseLong(config.getConfig(
@@ -217,7 +214,11 @@ public class GenericEventGenerator extends AbstractEventEmitter
       if (null == metaDatas) {
         ObjectMapper objectMapper = new ObjectMapper();
         String metaDataJson = config.getConfig("sim.generic.metadata");
-        this.metaDatas = objectMapper.readValue(metaDataJson, MetaData[].class);
+        try {
+          this.metaDatas = objectMapper.readValue(metaDataJson, MetaData[].class);
+        }catch (IOException e) {
+          throw new Exception( "Unable to parse metadata . Please check the metadata property in config file.");
+        }
       } else{
         this.metaDatas = metaDatas;
       }
@@ -226,11 +227,10 @@ public class GenericEventGenerator extends AbstractEventEmitter
       for (int i = 0; i < eventClassName.length ; i++) {
         eventClasses[i]= Class.forName(eventClassName[i]);
       }
-
     }
     catch (IOException e) {
       e.printStackTrace();
-      throw new Exception("ioooooo poneeee.....");
+      throw new Exception("ioooooo poneeee.....Error in Initializing Generator please check  config file");
     }
 
     SimpleDateFormat sf =null;
