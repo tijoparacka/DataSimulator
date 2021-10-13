@@ -73,23 +73,27 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
         }else if( message instanceof Event) {
             try {
                 String data = writer.writeValueAsString ((Event) message).replace("\n", "");
-                method.setAccessible(true);
-                String result = (String)method.invoke(message);
-                producer.send(new ProducerRecord<String, String>(topicName,result,data ));
+                if (method != null ) {
+                    method.setAccessible(true);
+                    String result = (String) method.invoke(message);
+                    producer.send(new ProducerRecord<String, String>(topicName, result, data));
+                }else {
+                    producer.send(new ProducerRecord<String, String>(topicName, data));
+                }
                 numberOfEventsProcessed++;
                 if(numberOfEventsProcessed % maxLoggingRows == 0){
                     logger.info("Processed " + numberOfEventsProcessed + " events");
                     logger.info("Number of events processed per sec  = " + (maxLoggingRows /(  (System.currentTimeMillis() - startTime ) * 1000))) ;
                     startTime = System.currentTimeMillis();
                 }
+                if(DataSimulator.getNumberOfEvents() >0 )
+                    if(numberOfEventsProcessed > DataSimulator.getNumberOfEvents()){
+                        System.exit(0);
+                    }
             }
             catch (Exception e) {
                 logger.error(e.getMessage(), e);
             }
-            if(DataSimulator.getNumberOfEvents() >0 )
-                if(numberOfEventsProcessed > DataSimulator.getNumberOfEvents()){
-                    System.exit(0);
-                }
         }
     }
 }
