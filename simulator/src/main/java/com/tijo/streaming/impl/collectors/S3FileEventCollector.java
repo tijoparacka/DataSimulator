@@ -78,7 +78,6 @@ public class S3FileEventCollector extends FileEventCollector {
     S3FileUploader s3FileUploader  = new S3FileUploader(accessKey,secretKey,bucketName,s3Folder,region);
     s3FileUploader.upload(getFileName());
     new File(getFileName().toFile().getAbsolutePath()).delete();
-    Thread.sleep(5000);
     super.shutDown();
   }
     @Override
