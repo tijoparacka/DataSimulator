@@ -20,7 +20,7 @@ public class FileEventCollector extends AbstractEventCollector{
 
   private  String outputPath;
   private  int maxRows;
-  private Path path ;
+  protected Path path ;
   private int fileNameLength;
   BufferedWriter fileWriter;
   private long startTime =System.currentTimeMillis();
@@ -52,7 +52,7 @@ public class FileEventCollector extends AbstractEventCollector{
     }
   }
 
-  private Path getNewPath(int fileNameLength) throws Exception
+  protected Path getNewPath(int fileNameLength) throws Exception
   {
     if (fileNameLength <=0 )
       fileNameLength =10;
@@ -81,22 +81,35 @@ public class FileEventCollector extends AbstractEventCollector{
     }
     if(numberOfEventsProcessed % maxRows == 0){
       logger.info("Processed " + numberOfEventsProcessed + " events");
-      logger.info("Number of events processed per sec  = " + (maxRows /(  (System.currentTimeMillis() - startTime ) /1000))) ;
+      if ( (System.currentTimeMillis() - startTime ) /1000 == 0 ){
+        logger.info("Unable to compute ... consider increasing the maxrows") ;
+      }else {
+        logger.info("Number of events processed per sec  = " + (maxRows / ((System.currentTimeMillis() - startTime)
+                                                                           / 1000)));
+      }
       startTime = System.currentTimeMillis();
-      this.path = getNewPath(fileNameLength);
       fileWriter.flush();
       fileWriter.close();
+      this.path = getNewPath(fileNameLength);
       fileWriter = new BufferedWriter(new FileWriter(path.toString()));
     }
     if(DataSimulator.getNumberOfEvents() >0 )
       if(numberOfEventsProcessed > DataSimulator.getNumberOfEvents()){
-        System.exit(0);
-       }
+          shutDown();
+      }
   }
 
-  private void writeFile(Path path, byte[] bytes, StandardOpenOption append) throws IOException
+  protected void shutDown(){
+
+    System.exit(0);
+  }
+
+  protected  void writeFile(Path path, byte[] bytes, StandardOpenOption append) throws IOException
   {
     fileWriter.write(new String(bytes));
   }
 
+  public Path getFileName(){
+    return  this.path;
+  }
 }

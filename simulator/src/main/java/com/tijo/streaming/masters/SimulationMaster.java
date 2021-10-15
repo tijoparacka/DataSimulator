@@ -47,8 +47,8 @@ public class SimulationMaster extends UntypedActor {
 			}
 		} else if (message instanceof StopSimulation) {
 			listener.tell(new SimulationResultsSummary(eventCount), getSelf());
-			this.getContext().system().shutdown();
-			System.exit(0);
+	//		this.getContext().system().shutdown();
+	//		System.exit(0);
 		} else {
 			logger.debug("Received message I'm not sure what to do with: "
 					+ message);
