@@ -2,30 +2,35 @@
 
 - name: Creating  Dir for simulation | {{ simulator_dir }}
   file:
-    dest: "{{ simulator_dir }}"
+    dest: '{{ simulator_dir }}'
     state: directory
 
-
-- name: copy the simulator to all nodes
+- name: Copying simulator to {{ simulator_dir }}
   copy:
-    src: "{{ sim_package_path }}"
-    dest: "/tmp/simulator.tar.gz"
+    src: ../../../../
+    dest: '{{ simulator_dir }}'
     force: yes
 
-- name: Extract  simulator
-  unarchive:
-    src: "/tmp/simulator.tar.gz"
-    dest: "{{ simulator_dir }}"
-    remote_src: yes
+#- name: copy the simulator to all nodes
+#  copy:
+#    src: "{{ sim_package_path }}"
+#    dest: "/tmp/simulator.tar.gz"
+#    force: yes
 
-- name: Updating configs
-  template:
-    src: "config.j2"
-    dest: "{{ sim_config_path }}"
+#- name: Extract  simulator
+#  unarchive:
+#    src: "/tmp/simulator.tar.gz"
+#    dest: "{{ simulator_dir }}"
+#    remote_src: yes
+
+#- name: Updating configs
+#  template:
+#    src: "config.j2"
+#    dest: "{{ sim_config_path }}"
 
 
-- name: Copy schema file
-  copy:
-    src: "{{ local_sim_schema }}"
-    dest: "{{ remote_sim_schema }}"
-    force: yes
+#- name: Copy schema file
+#  copy:
+#    src: "{{ local_sim_schema }}"
+#    dest: "{{ remote_sim_schema }}"
+#    force: yes
