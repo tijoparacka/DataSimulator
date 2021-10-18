@@ -38,7 +38,8 @@ public class ConfigUtil
 
     // Check if property file exists in class path
     Properties prop = new Properties();
-    try (FileInputStream is = new FileInputStream(new File(DataSimulator.getConfigFilePath()))) {
+    try
+        (FileInputStream is = new FileInputStream(new File(DataSimulator.getConfigFilePath()))) {
       prop.load(is);
       populateConfigMap(prop);
     }
