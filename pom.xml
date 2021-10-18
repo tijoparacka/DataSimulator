@@ -24,7 +24,7 @@
 
     <groupId>com.tijo</groupId>
     <artifactId>data-simulator</artifactId>
-    <version>1.3.2</version>
+    <version>1.3.4</version>
     <packaging>pom</packaging>
 
     <name>data-simulator</name>
