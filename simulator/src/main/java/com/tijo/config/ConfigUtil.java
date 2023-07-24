@@ -27,7 +27,11 @@ public class ConfigUtil
 
   public String getConfig(String propertyKey)
   {
-    return config.get(propertyKey);
+    String  envValue= System.getenv(propertyKey);
+    if(envValue != null && !envValue.isEmpty())
+      return envValue;
+    else
+      return config.get(propertyKey);
   }
   public Map<String,String> getConfigProperties(){
     return config;
