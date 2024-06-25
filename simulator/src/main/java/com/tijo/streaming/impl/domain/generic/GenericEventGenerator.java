@@ -164,9 +164,15 @@ public class GenericEventGenerator extends AbstractEventEmitter
           if (m.getLimit() != null  || m.getLimit().intValue()!= 0  ){
             limit =rand.nextLong(0, m.getLimit().longValue());
           }
-          date = m.getDateFormatter().format(new Date(System.currentTimeMillis() - limit));
-          val = date;
-          sb.append('"').append(date).append('"');
+          long epoc = System.currentTimeMillis() - limit;
+          //if no format mentioned then default to epoc
+          if (m.getDateFormatter() != null ) {
+            date = m.getDateFormatter().format(new Date(epoc));
+            val = date;
+          }else {
+            val = epoc+"";
+          }
+          sb.append('"').append(val).append('"');
           break;
         case SCRIPT :
           interpreter.set("row",row);
@@ -186,7 +192,8 @@ public class GenericEventGenerator extends AbstractEventEmitter
     return getGenericEvents(sb.toString());
   }
 
-  protected GenericEvent[] getGenericEvents(String eventString) throws Exception
+  protected GenericEvent[]
+  getGenericEvents(String eventString) throws Exception
   {
     try {
       GenericEvent[] genericEvents = new GenericEvent[eventClasses.length];
@@ -256,12 +263,17 @@ public class GenericEventGenerator extends AbstractEventEmitter
             dim.put(metaData.getDimension(),map);
             break;
           case DATE:
-            if(metaData.getFormat() != null ){
-              sf = new SimpleDateFormat(metaData.getFormat());
-              metaData.setDateFormatter(sf);
-            }else{
-              throw new Exception (" Please specify a Java Date format");
+//            if(metaData.getFormat() != null ){
+              if ( metaData.getFormat().trim().length() >0) {
+                sf = new SimpleDateFormat(metaData.getFormat());
+                metaData.setDateFormatter(sf);
+            } else {
+              logger.info("no date format mentioned for "+ metaData.getDimension()+" . defaulting to epoc ");
+              metaData.setDateFormatter(null);
             }
+//            }else{
+//              throw new Exception (" Please specify a Java Date format");
+//            }
             break;
           case DATE_RANGE :
             if(metaData.getFormat() != null ){

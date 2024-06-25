@@ -13,8 +13,7 @@ java -server -Xmx2048m \
 -XX:+HeapDumpOnOutOfMemoryError \
 -XX:+ExitOnOutOfMemoryError \
 -XX:+PrintGC \
--Xloggc:gc.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=2M \
--XX:HeapDumpPath=/tmp/druid-heap.hprof -cp "$jarpath" com.tijo.DataSimulator $bin_dir/../ "$@" 2>$1 &
+-XX:HeapDumpPath=/tmp/druid-heap.hprof -cp "$jarpath" com.tijo.DataSimulator $bin_dir/../ "$@" 2>$1
 _pid=$!
 echo "$_pid" > $bin_dir/../app.pid
 

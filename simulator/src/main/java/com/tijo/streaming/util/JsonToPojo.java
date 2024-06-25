@@ -43,7 +43,7 @@ public class JsonToPojo
                 return true;
             }
             public SourceType getSourceType(){
-      return SourceType.JSONSCHEMA;
+      return SourceType.JSON;
     }  
           };  
   //        SchemaMapper mapper = new SchemaMapper(new RuleFactory(config, new Jackson2Annotator(config), new SchemaStore()), new SchemaGenerator());

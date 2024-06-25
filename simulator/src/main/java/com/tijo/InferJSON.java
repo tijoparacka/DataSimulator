@@ -32,11 +32,18 @@ public class InferJSON
     String jsonPath = baseDir+File.separator+conf.getConfig("sim.generic.infer.jsonPath");
     String genCode = conf.getConfig("sim.generic.infer.generateCode");
     String pojoOutput = baseDir+File.separator+conf.getConfig("sim.generic.infer.pojoOutputDir");
+
+    System.out.println("Base dir"+ baseDir);
+    System.out.println("Location of the sample json file:"+jsonPath);
+    System.out.println("Whether to generate the code:"+genCode);
+
     if(pojoOutput == null)
       pojoOutput = "pojoOutput";
 
-    if(!jsonPath.endsWith(".json")){
-      throw  new Exception("sim.generic.infer.jsonPath should ends with .json");
+    // if the file is java , keep the file in pojoOutput dir and set the flag genCode to false
+    // this will just manipulate the java file for this simulator and create the class file.
+    if(!jsonPath.endsWith(".json") &&  !jsonPath.endsWith(".java") ){
+      throw  new Exception("sim.generic.infer.jsonPath should ends with .json or .java");
     }
     File jsonFile = new File(jsonPath);
     String className = jsonFile.getName().replace(".json","");
@@ -55,8 +62,9 @@ public class InferJSON
       JsonToPojo.convertJSON2POJO(jsonFile.toURI().toURL(), pojoOutputDir, packageName,
                                   jsonFile.getName().substring(0, jsonFile.getName().indexOf("."))
       );
-      injectEventCode( javaFilePath);
     }
+    injectEventCode( javaFilePath);
+
     SimJavaCompiler.compile(javaFilePath);
 
    // File classFolder = new File (pojoOutputDir+File.separator+packageName.substring(0,packageName.indexOf(".")));
