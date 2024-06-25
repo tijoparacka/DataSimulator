@@ -15,15 +15,15 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 
 public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
-    private String topicName;
-    private String bootstrapServer;
-    private Properties props;
-    private  int maxLoggingRows;
-    private String  keyColumn ;
-    private long startTime =System.currentTimeMillis();
-    private Class eventClass ;
-    private Method method;
-    private org.apache.kafka.clients.producer.Producer<String, String> producer;
+    protected String topicName;
+    protected String bootstrapServer;
+    protected Properties props;
+    protected  int maxLoggingRows;
+    protected String  keyColumn ;
+    protected long startTime =System.currentTimeMillis();
+    protected Class eventClass ;
+    protected Method method;
+    protected org.apache.kafka.clients.producer.Producer<String, String> producer;
 
     public UnsecuredKafkaEventCollector() {
         super();
@@ -83,7 +83,7 @@ public class UnsecuredKafkaEventCollector extends AbstractEventCollector {
                 numberOfEventsProcessed++;
                 if(numberOfEventsProcessed % maxLoggingRows == 0){
                     logger.info("Processed " + numberOfEventsProcessed + " events");
-                    logger.info("Number of events processed per sec  = " + (maxLoggingRows /(  (System.currentTimeMillis() - startTime ) * 1000))) ;
+                    logger.info("Number of events processed per sec  = " + (maxLoggingRows /(  (System.currentTimeMillis() - startTime ) / 1000))) ;
                     startTime = System.currentTimeMillis();
                 }
                 if(DataSimulator.getNumberOfEvents() >0 )
